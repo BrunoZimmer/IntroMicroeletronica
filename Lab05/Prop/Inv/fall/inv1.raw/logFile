@@ -1,0 +1,2579 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Jan 13 12:22:07 2020"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "12:22:07 PM, Mon Jan 13, 2020"
+"design" "*Inversor"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-000_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-000_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-000-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-000.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-001_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-001_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-001_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-001-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-001.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-002_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-002_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-002_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-002-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-002.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-003_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-003_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-003_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-003-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-003.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-004_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-004_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-004_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-004-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-004.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-005_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-005_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-005_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-005-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-005.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-000-foreach" "analysisInst" (
+"foreach"
+"DifTempo-000.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-000_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-006_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-006_DifTempo.tran.tran"
+"PSF"
+"DifTempo-000-foreach"
+("time")
+"Transient Analysis `DifTempo-006_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-006-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-006.meas_tran"
+"PSF"
+"DifTempo-000_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-007_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-007_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-007_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-007-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-007.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-008_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-008_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-008_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-008-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-008.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-009_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-009_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-009_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-009-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-009.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-010_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-010_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-010_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-010-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-010.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-011_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-011_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-011_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-011-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-011.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-012_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-012_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-012_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-012-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-012.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-001-foreach" "analysisInst" (
+"foreach"
+"DifTempo-001.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-001_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-013_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-013_DifTempo.tran.tran"
+"PSF"
+"DifTempo-001-foreach"
+("time")
+"Transient Analysis `DifTempo-013_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-013-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-013.meas_tran"
+"PSF"
+"DifTempo-001_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-014_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-014_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-014_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-014-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-014.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-015_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-015_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-015_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-015-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-015.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-016_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-016_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-016_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-016-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-016.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-017_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-017_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-017_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-017-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-017.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-018_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-018_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-018_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-018-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-018.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-019_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-019_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-019_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-019-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-019.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-002-foreach" "analysisInst" (
+"foreach"
+"DifTempo-002.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-002_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-020_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-020_DifTempo.tran.tran"
+"PSF"
+"DifTempo-002-foreach"
+("time")
+"Transient Analysis `DifTempo-020_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-020-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-020.meas_tran"
+"PSF"
+"DifTempo-002_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-021_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-021_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-021_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-021-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-021.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-022_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-022_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-022_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-022-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-022.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-023_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-023_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-023_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-023-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-023.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-024_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-024_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-024_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-024-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-024.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-025_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-025_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-025_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-025-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-025.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-026_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-026_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-026_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-026-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-026.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-003-foreach" "analysisInst" (
+"foreach"
+"DifTempo-003.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-003_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"DifTempo-027_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-027_DifTempo.tran.tran"
+"PSF"
+"DifTempo-003-foreach"
+("time")
+"Transient Analysis `DifTempo-027_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-027-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-027.meas_tran"
+"PSF"
+"DifTempo-003_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-028_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-028_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-028_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-028-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-028.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-029_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-029_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-029_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-029-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-029.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-030_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-030_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-030_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-030-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-030.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-031_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-031_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-031_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-031-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-031.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-032_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-032_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-032_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-032-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-032.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-033_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-033_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-033_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-033-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-033.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-004-foreach" "analysisInst" (
+"foreach"
+"DifTempo-004.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-004_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"DifTempo-034_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-034_DifTempo.tran.tran"
+"PSF"
+"DifTempo-004-foreach"
+("time")
+"Transient Analysis `DifTempo-034_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-034-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-034.meas_tran"
+"PSF"
+"DifTempo-004_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-035_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-035_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-035_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-035-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-035.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-036_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-036_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-036_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-036-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-036.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-037_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-037_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-037_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-037-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-037.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-038_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-038_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-038_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-038-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-038.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-039_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-039_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-039_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-039-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-039.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-040_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-040_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-040_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-040-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-040.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-005-foreach" "analysisInst" (
+"foreach"
+"DifTempo-005.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-005_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"DifTempo-041_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-041_DifTempo.tran.tran"
+"PSF"
+"DifTempo-005-foreach"
+("time")
+"Transient Analysis `DifTempo-041_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-041-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-041.meas_tran"
+"PSF"
+"DifTempo-005_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-042_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-042_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-042_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-foreach-042-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-042.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-043_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-043_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-043_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-foreach-043-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-043.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-044_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-044_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-044_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-foreach-044-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-044.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-045_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-045_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-045_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-foreach-045-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-045.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-046_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-046_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-046_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-foreach-046-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-046.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-047_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-047_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-047_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-foreach-047-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-047.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"DifTempo-006-foreach" "analysisInst" (
+"foreach"
+"DifTempo-006.foreach"
+"PSF"
+"DifTempo-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo-006_meas.meas_foreach"
+"PSF"
+"DifTempo_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"DifTempo-048_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-048_DifTempo.tran.tran"
+"PSF"
+"DifTempo-006-foreach"
+("time")
+"Transient Analysis `DifTempo-048_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"DifTempo-foreach-048-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-048.meas_tran"
+"PSF"
+"DifTempo-006_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+END

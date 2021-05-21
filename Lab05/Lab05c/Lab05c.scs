@@ -1,0 +1,32 @@
+*Lab05c
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'INV.spi'
+.include 'NAND2.spi'
+.include 'OR2.spi'
+.include 'XNOR2.spi'
+
+.param cap=7.6f
+.param slew=250p
+
+Vdd vsupply 0 1
+V1 in 0 1 PWL 0 1 1n 1 '(slew*(10/8)+1n)' 0 3n 0 '(slew*(10/8)+3n)' 1
+V2 b 0 1
+V3 c 0 1
+V4 d 0 0
+
+X1 in out1 vsupply 0 INV
+X2 out1 b out2 vsupply 0 NAND
+X3 out2 c out3 vsupply 0 XNOR
+X4 out3 d out vsupply 0 OR
+
+Cload out 0 'cap'
+
+.TRAN 100p 10n
+.print V(out)
+
+.option rawfmt="psfbin"
+
+

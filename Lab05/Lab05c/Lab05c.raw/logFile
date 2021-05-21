@@ -1,0 +1,62 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Jan 13 11:42:45 2020"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "11:42:45 AM, Mon Jan 13, 2020"
+"design" "*Lab05c"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"FallTime-tran" "analysisInst" (
+"tran"
+"FallTime.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"FallTime-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for FallTime Analysis tran"
+)
+"RiseTime-tran" "analysisInst" (
+"tran"
+"RiseTime.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `RiseTime': time = (3 ns -> 6 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"RiseTime-meas_tran" "analysisInst" (
+"meas_tran"
+"RiseTime.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for RiseTime Analysis tran"
+)
+END

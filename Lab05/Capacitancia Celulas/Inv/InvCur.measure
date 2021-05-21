@@ -1,0 +1,13 @@
+Exported variables from results directory:  ./INV.raw/
+
+date               :  3:32:08 PM, Thur Jan 9, 2020
+design             :  *Inversor
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Corrente
+Analysis Type      :  tran
+Cap             = 1.70107e-06 
+
+

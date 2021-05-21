@@ -1,0 +1,54 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 28345
+Memory  available: 1.0319 GB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3343.1 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 23.5 %, 24.2 %, 25.0 %
+
+
+Simulating `inv1.scs' on itacolomi.lapsi at 1:11:01 PM, Thur Jan 9, 2020 (process id: 28345).
+Current working directory: /home/brunozimmer/Documentos/Lab05/Inv
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        invdelt.mdl inv1.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+Error found by spectre.
+    ERROR (CMI-2011): Unable to open input file `inv1.scs'.
+        No such file or directory.
+
+Time for parsing: CPU = 159.133 ms, elapsed = 175.381 ms.
+Time accumulated: CPU = 178.049 ms, elapsed = 175.388 ms.
+Peak resident memory used = 48.2 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+Aggregate audit (1:11:01 PM, Thur Jan 9, 2020):
+Time used: CPU = 182 ms, elapsed = 182 ms, util. = 100%.
+Time spent in licensing: elapsed = 22.5 ms, percentage of total = 12.4%.
+Peak memory used = 49.5 Mbytes.
+Simulation started at: 1:11:01 PM, Thur Jan 9, 2020, ended at: 1:11:01 PM, Thur Jan 9, 2020, with elapsed time (wall clock): 182 ms.
+spectre completes with 1 error, 1 warning, and 0 notices.
+spectre terminated prematurely due to fatal error.

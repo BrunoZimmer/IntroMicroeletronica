@@ -1,0 +1,29 @@
+*MDL code
+
+alias measurement RiseTime {
+	run tran (stop = 3n)
+	export real OrRise= risetime(sig=V(out1),initval=0,finalval=1)
+	export real NandFall= falltime(sig=V(out2),initval=1,finalval=0)
+	export real InvRise= risetime(sig=V(out),initval=0,finalval=1)
+
+	export real R_PropOr= deltax(sig1=V(in), sig2=V(out1),thresh1=0.5, thresh2=0.5)
+	export real F_PropNand= deltax(sig1=V(out1), sig2=V(out2),thresh1=0.5, thresh2=0.5)
+	export real R_PropInv= deltax(sig1=V(out2), sig2=V(out),thresh1=0.5, thresh2=0.5)
+
+	export real R_Prop_Cell= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)
+}
+alias measurement FallTime {
+	run tran (start = 3n, stop = 6n)
+	export real OrFall= falltime(sig=V(out1),initval=1,finalval=0)
+	export real NandRise= risetime(sig=V(out2),initval=0,finalval=1)
+	export real InvFall= falltime(sig=V(out),initval=1,finalval=0)
+
+	export real F_PropOr= deltax(sig1=V(in), sig2=V(out1),thresh1=0.5, thresh2=0.5)
+	export real R_PropNand= deltax(sig1=V(out1), sig2=V(out2),thresh1=0.5, thresh2=0.5)
+	export real F_PropInv= deltax(sig1=V(out2), sig2=V(out),thresh1=0.5, thresh2=0.5)
+	
+	export real F_Prop_Cell= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)
+}
+
+run RiseTime
+run FallTime

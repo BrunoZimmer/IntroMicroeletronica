@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*Inversor'
+cap alter# 
+-1.53278e-15 1 
+

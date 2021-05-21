@@ -1,0 +1,14 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  1:15:23 PM, Sun Feb 23, 2020
+design             :  *Threshold
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  VThreshold
+Analysis Type      :  dc
+Max_Der         = 0.00066538 
+Max_Ten         = 1 
+
+

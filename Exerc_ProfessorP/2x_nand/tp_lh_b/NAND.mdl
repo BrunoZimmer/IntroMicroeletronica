@@ -1,0 +1,10 @@
+*MDL code
+
+alias measurement DifTempo {
+	run tran (stop = 3n)
+	export real Dtempo= deltax(sig1=V(a), sig2=V(out),thresh1=0.5, thresh2=0.5)
+}
+
+foreach cap from {0.2f, 0.4f, 0.8f}{
+		run DifTempo
+}

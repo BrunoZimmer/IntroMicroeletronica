@@ -1,0 +1,2579 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Jan 13 12:38:09 2020"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "12:38:09 PM, Mon Jan 13, 2020"
+"design" "*Nand"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-000_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-000_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-000-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-000.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-001_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-001_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-001_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-001-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-001.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-002_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-002_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-002_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-002-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-002.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-003_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-003_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-003_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-003-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-003.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-004_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-004_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-004_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-004-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-004.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-005_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-005_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-005_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-005-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-005.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-000-foreach" "analysisInst" (
+"foreach"
+"FallTime-000.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-000_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-000_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 2.00000e-16
+)
+
+"FallTime-006_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-006_FallTime.tran.tran"
+"PSF"
+"FallTime-000-foreach"
+("time")
+"Transient Analysis `FallTime-006_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-006-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-006.meas_tran"
+"PSF"
+"FallTime-000_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-007_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-007_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-007_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-007-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-007.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-008_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-008_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-008_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-008-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-008.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-009_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-009_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-009_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-009-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-009.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-010_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-010_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-010_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-010-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-010.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-011_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-011_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-011_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-011-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-011.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-012_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-012_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-012_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-012-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-012.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-001-foreach" "analysisInst" (
+"foreach"
+"FallTime-001.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-001_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-001_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 4.00000e-16
+)
+
+"FallTime-013_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-013_FallTime.tran.tran"
+"PSF"
+"FallTime-001-foreach"
+("time")
+"Transient Analysis `FallTime-013_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-013-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-013.meas_tran"
+"PSF"
+"FallTime-001_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-014_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-014_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-014_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-014-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-014.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-015_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-015_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-015_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-015-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-015.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-016_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-016_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-016_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-016-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-016.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-017_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-017_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-017_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-017-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-017.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-018_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-018_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-018_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-018-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-018.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-019_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-019_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-019_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-019-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-019.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-002-foreach" "analysisInst" (
+"foreach"
+"FallTime-002.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-002_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-002_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 8.00000e-16
+)
+
+"FallTime-020_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-020_FallTime.tran.tran"
+"PSF"
+"FallTime-002-foreach"
+("time")
+"Transient Analysis `FallTime-020_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-020-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-020.meas_tran"
+"PSF"
+"FallTime-002_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-021_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-021_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-021_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-021-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-021.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-022_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-022_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-022_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-022-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-022.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-023_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-023_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-023_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-023-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-023.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-024_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-024_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-024_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-024-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-024.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-025_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-025_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-025_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-025-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-025.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-026_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-026_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-026_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-026-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-026.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-003-foreach" "analysisInst" (
+"foreach"
+"FallTime-003.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-003_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-003_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.90000e-15
+)
+
+"FallTime-027_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-027_FallTime.tran.tran"
+"PSF"
+"FallTime-003-foreach"
+("time")
+"Transient Analysis `FallTime-027_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-027-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-027.meas_tran"
+"PSF"
+"FallTime-003_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-028_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-028_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-028_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-028-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-028.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-029_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-029_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-029_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-029-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-029.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-030_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-030_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-030_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-030-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-030.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-031_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-031_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-031_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-031-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-031.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-032_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-032_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-032_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-032-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-032.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-033_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-033_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-033_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-033-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-033.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-004-foreach" "analysisInst" (
+"foreach"
+"FallTime-004.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-004_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-004_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 3.80000e-15
+)
+
+"FallTime-034_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-034_FallTime.tran.tran"
+"PSF"
+"FallTime-004-foreach"
+("time")
+"Transient Analysis `FallTime-034_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-034-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-034.meas_tran"
+"PSF"
+"FallTime-004_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-035_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-035_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-035_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-035-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-035.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-036_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-036_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-036_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-036-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-036.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-037_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-037_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-037_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-037-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-037.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-038_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-038_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-038_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-038-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-038.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-039_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-039_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-039_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-039-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-039.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-040_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-040_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-040_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-040-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-040.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-005-foreach" "analysisInst" (
+"foreach"
+"FallTime-005.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-005_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-005_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 7.60000e-15
+)
+
+"FallTime-041_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-041_FallTime.tran.tran"
+"PSF"
+"FallTime-005-foreach"
+("time")
+"Transient Analysis `FallTime-041_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-041-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-041.meas_tran"
+"PSF"
+"FallTime-005_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach" "analysisInst" (
+"foreach"
+"FallTime.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-042_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-042_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-042_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-foreach-042-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-042.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.10000e-11
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-043_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-043_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-043_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-foreach-043-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-043.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 7.80000e-11
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-044_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-044_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-044_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-foreach-044-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-044.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.30000e-10
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-045_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-045_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-045_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-foreach-045-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-045.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 2.50000e-10
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-046_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-046_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-046_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-foreach-046-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-046.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 4.75000e-10
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-047_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-047_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-047_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-foreach-047-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-047.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 9.02000e-10
+)
+
+"FallTime-006-foreach" "analysisInst" (
+"foreach"
+"FallTime-006.foreach"
+"PSF"
+"FallTime-foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-006_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"FallTime-006_meas.meas_foreach"
+"PSF"
+"FallTime_meas-meas_foreach"
+("slew")
+"Foreach of variable slew parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"cap" 1.52000e-14
+)
+
+"FallTime-048_FallTime-tran" "analysisInst" (
+"tran"
+"FallTime-048_FallTime.tran.tran"
+"PSF"
+"FallTime-006-foreach"
+("time")
+"Transient Analysis `FallTime-048_FallTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+"FallTime-foreach-048-meas_tran" "analysisInst" (
+"meas_tran"
+"FallTime-foreach-048.meas_tran"
+"PSF"
+"FallTime-006_meas-meas_foreach"
+()
+"Measurement Results for FallTime Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"slew" 1.70000e-09
+)
+
+END

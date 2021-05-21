@@ -1,0 +1,24 @@
+Exported variables from results directory:  ./NAND.raw/
+
+date               :  11:50:01 AM, Fri Feb 14, 2020
+design             :  *Nand
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  DifTempo-meas_foreach
+Analysis Type      :  tran
+Dtempo             cap        @ 1e-15        =  3.15165e-11     
+Dtempo             cap        @ 2e-15        =  3.33349e-11     
+Dtempo             cap        @ 4e-15        =  3.69534e-11     
+Dtempo             cap        @ 8e-15        =  4.40215e-11     
+Dtempo             cap        @ 1.6e-14      =  5.79349e-11     
+Dtempo             cap        @ 3.2e-14      =  8.55074e-11     
+Dtempo             cap        @ 6.4e-14      =  1.40133e-10     
+Dtempo             cap        @ 1.28e-13     =  2.48916e-10     
+
+
+
+
+

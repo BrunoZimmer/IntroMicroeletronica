@@ -1,0 +1,13 @@
+Exported variables from results directory:  ./OR.raw/
+
+date               :  10:23:33 AM, Mon Jan 13, 2020
+design             :  *OR
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Capacitancia
+Analysis Type      :  tran
+cap             = -6.07094e-16 
+
+

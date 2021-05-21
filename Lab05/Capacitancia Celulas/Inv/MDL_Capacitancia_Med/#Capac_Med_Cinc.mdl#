@@ -1,0 +1,18 @@
+//media 5 mdl
+
+alias measurement Capacitancia {
+	run tran (start=1n, stop = 4n)
+	real tp = falltime(sig=V(out),initval=1,finalval=0)/5
+
+	real cap1 = (I(Va:p) @ (tp*1+1n))/(deriv(sig=V(a)) @ (tp*1+1n))
+	real cap2 = (I(Va:p) @ (tp*2+1n))/(deriv(sig=V(a)) @ (tp*2+1n))	
+	real cap3 = (I(Va:p) @ (tp*3+1n))/(deriv(sig=V(a)) @ (tp*3+1n))
+	real cap4 = (I(Va:p) @ (tp*4+1n))/(deriv(sig=V(a)) @ (tp*4+1n))
+	real cap5 = (I(Va:p) @ (tp*5+1n))/(deriv(sig=V(a)) @ (tp*5+1n))
+
+	export real cap = (cap1+cap2+cap3+cap4+cap5)/5
+}
+
+run Capacitancia
+
+

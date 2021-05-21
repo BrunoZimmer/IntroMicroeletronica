@@ -1,0 +1,10 @@
+*MDL code
+
+alias measurement Corrente {
+	run tran (start=1n, stop = 4n)
+	export real Cur = I(Va:p) @1.16n
+}
+
+run Corrente
+
+

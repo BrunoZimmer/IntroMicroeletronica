@@ -1,0 +1,17 @@
+*Inversor
+
+simulator lang=spice
+.param cap=1.9f
+.param slew=250p
+
+.include '45nm_LP.pm'
+.include 'INV.spi'
+
+Vd vsupply 0 1
+Va a 0 1 PWL 0 0 1n 0 '(slew*(10/8)+1n)' 1
+
+X1 a out vsupply 0 INV
+Cload out 0 'cap'
+
+.option rawfmt="psfbin"
+

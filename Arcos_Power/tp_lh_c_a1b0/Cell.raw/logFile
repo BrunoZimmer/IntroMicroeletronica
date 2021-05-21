@@ -1,0 +1,62 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Mar  2 10:35:39 2020"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "10:35:39 AM, Mon Mar 2, 2020"
+"design" "*OR"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"Power-tran" "analysisInst" (
+"tran"
+"Power.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `Power': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"Power-meas_tran" "analysisInst" (
+"meas_tran"
+"Power.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for Power Analysis tran"
+)
+"PropTime-tran" "analysisInst" (
+"tran"
+"PropTime.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PropTime': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PropTime-meas_tran" "analysisInst" (
+"meas_tran"
+"PropTime.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PropTime Analysis tran"
+)
+END

@@ -1,0 +1,13 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  11:08:05 AM, Thur Feb 20, 2020
+design             :  *OR
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Power
+Analysis Type      :  tran
+Power           = NaN 
+
+

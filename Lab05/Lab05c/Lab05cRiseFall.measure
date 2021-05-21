@@ -1,0 +1,24 @@
+Exported variables from results directory:  ./Lab05c.raw/
+
+date               :  11:42:45 AM, Mon Jan 13, 2020
+design             :  *Lab05c
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  FallTime
+Analysis Type      :  tran
+InvRise         = 7.61065e-11 
+NandFall        = 5.09398e-11 
+XnorFall        = 4.04784e-11 
+OrFall          = 7.22395e-11 
+
+
+Measurement Name   :  RiseTime
+Analysis Type      :  tran
+InvFall         = 6.82259e-11 
+NandRise        = 3.54462e-11 
+XnorRise        = 3.62986e-11 
+OrRise          = 7.40287e-11 
+
+

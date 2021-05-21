@@ -1,0 +1,56 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 22328
+Memory  available: 478.0113 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3300.0 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 2527.5 %, 2531.8 %, 2483.0 %
+
+
+Simulating `Inversor' on itacolomi.lapsi at 5:09:09 PM, Thur Nov 21, 2019 (process id: 22328).
+Current working directory: /home/brunozimmer/Documentos/Lab04
+Command line:
+    /tools/cadence/SPECTRE161/tools/bin/spectre -64 Inversor
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Lab04/Inversor
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 131.067 ms, elapsed = 4.30718 s.
+Time accumulated: CPU = 149.858 ms, elapsed = 4.30719 s.
+Peak resident memory used = 42.5 Mbytes.
+
+
+Error found by spectre in `INV', during circuit read-in.
+    ERROR (SFE-400): "Inversor" 9: The instance `M_i_0' does not have a valid master.
+    ERROR (SFE-400): "Inversor" 10: The instance `M_i_1' does not have a valid master.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 17.112 ms, elapsed = 487.59 ms.
+Time accumulated: CPU = 167.146 ms, elapsed = 4.79513 s.
+Peak resident memory used = 49.2 Mbytes.
+
+
+Aggregate audit (5:09:14 PM, Thur Nov 21, 2019):
+Time used: CPU = 168 ms, elapsed = 4.9 s, util. = 3.42%.
+Time spent in licensing: elapsed = 55.6 ms.
+Peak memory used = 49.3 Mbytes.
+Simulation started at: 5:09:09 PM, Thur Nov 21, 2019, ended at: 5:09:14 PM, Thur Nov 21, 2019, with elapsed time (wall clock): 4.9 s.
+spectre completes with 2 errors, 0 warnings, and 0 notices.
+spectre terminated prematurely due to fatal error.

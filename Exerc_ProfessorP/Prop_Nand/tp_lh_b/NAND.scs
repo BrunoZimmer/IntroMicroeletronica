@@ -1,0 +1,21 @@
+*Nand
+
+simulator lang=spice
+.param cap=0.2f
+.param slew=41p
+
+.include 'NAND2.spi'
+
+Vd vsupply 0 1
+Va a 0 1 
+Vb b 0 1 PWL 0 1 1n 1 '(slew*(10/8)+1n)' 0
+
+
+X1 a b out vsupply 0 NAND
+Cload out 0 'cap'
+
+.TRAN 100p 10n
+.print V(out)
+
+.option rawfmt="psfbin"
+

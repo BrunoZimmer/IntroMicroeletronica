@@ -1,0 +1,114 @@
+Exported variables from results directory:  ./OR.raw/
+
+date               :  11:21:36 AM, Thur Jan 9, 2020
+design             :  *OR
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  DifTempo-meas_foreach
+Analysis Type      :  tran
+Dtempo             cap        @ 2e-16     
+                   slew       @ 4.1e-11      =  8.80751e-11     
+Dtempo             cap        @ 2e-16     
+                   slew       @ 7.8e-11      =  1.00916e-10     
+Dtempo             cap        @ 2e-16     
+                   slew       @ 1.3e-10      =  1.19017e-10     
+Dtempo             cap        @ 2e-16     
+                   slew       @ 2.5e-10      =  1.60904e-10     
+Dtempo             cap        @ 2e-16     
+                   slew       @ 4.75e-10     =  2.2736e-10     
+Dtempo             cap        @ 2e-16     
+                   slew       @ 9.02e-10     =  3.24563e-10     
+Dtempo             cap        @ 2e-16     
+                   slew       @ 1.7e-09      =  4.63704e-10     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 4.1e-11      =  9.01855e-11     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 7.8e-11      =  1.02641e-10     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 1.3e-10      =  1.2074e-10     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 2.5e-10      =  1.62612e-10     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 4.75e-10     =  2.29285e-10     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 9.02e-10     =  3.27144e-10     
+Dtempo             cap        @ 4e-16     
+                   slew       @ 1.7e-09      =  4.67117e-10     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 4.1e-11      =  9.32443e-11     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 7.8e-11      =  1.05696e-10     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 1.3e-10      =  1.23815e-10     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 2.5e-10      =  1.65681e-10     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 4.75e-10     =  2.32841e-10     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 9.02e-10     =  3.31625e-10     
+Dtempo             cap        @ 8e-16     
+                   slew       @ 1.7e-09      =  4.73076e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 4.1e-11      =  1.0023e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 7.8e-11      =  1.12757e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 1.3e-10      =  1.30856e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 2.5e-10      =  1.72684e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 4.75e-10     =  2.40522e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 9.02e-10     =  3.41226e-10     
+Dtempo             cap        @ 1.9e-15   
+                   slew       @ 1.7e-09      =  4.85575e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 4.1e-11      =  1.10192e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 7.8e-11      =  1.22716e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 1.3e-10      =  1.40762e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 2.5e-10      =  1.82565e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 4.75e-10     =  2.51062e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 9.02e-10     =  3.53341e-10     
+Dtempo             cap        @ 3.8e-15   
+                   slew       @ 1.7e-09      =  5.0105e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 4.1e-11      =  1.26897e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 7.8e-11      =  1.39364e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 1.3e-10      =  1.57454e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 2.5e-10      =  1.99217e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 4.75e-10     =  2.68278e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 9.02e-10     =  3.71558e-10     
+Dtempo             cap        @ 7.6e-15   
+                   slew       @ 1.7e-09      =  5.22437e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 4.1e-11      =  1.56182e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 7.8e-11      =  1.68625e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 1.3e-10      =  1.86697e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 2.5e-10      =  2.28177e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 4.75e-10     =  2.97399e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 9.02e-10     =  4.01789e-10     
+Dtempo             cap        @ 1.52e-14  
+                   slew       @ 1.7e-09      =  5.55693e-10     
+
+
+
+
+

@@ -1,0 +1,201 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 16670
+Memory  available: 757.8665 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3334.2 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 55.2 %, 56.0 %, 56.0 %
+
+
+Simulating `XNOR.scs' on itacolomi.lapsi at 10:25:10 AM, Mon Jan 13, 2020 (process id: 16670).
+Current working directory: /home/brunozimmer/Documentos/Lab05b/Xnor/MDL_Capacitancia_Med
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        Capac_Med_Cinc.mdl XNOR.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Lab05b/Xnor/MDL_Capacitancia_Med/XNOR.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Lab05b/Xnor/MDL_Capacitancia_Med/XNOR2.spi
+Reading file:  /home/brunozimmer/Documentos/Lab05b/Xnor/MDL_Capacitancia_Med/45nm_LP.pm
+Time for NDB Parsing: CPU = 208.857 ms, elapsed = 258.899 ms.
+Time accumulated: CPU = 227.71 ms, elapsed = 258.907 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 18.605 ms, elapsed = 23.8018 ms.
+Time accumulated: CPU = 246.485 ms, elapsed = 282.902 ms.
+Peak resident memory used = 59.7 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-2468): A MDL control file 'Capac_Med_Cinc.mdl' is specified.  All .measure, .print and .probe statements in netlist 'XNOR.scs' are ignored.
+
+
+
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .print not found, ignoring
+
+Time for EDB Visiting: CPU = 994 us, elapsed = 1.02997 ms.
+Time accumulated: CPU = 247.636 ms, elapsed = 284.103 ms.
+Peak resident memory used = 60.4 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 9
+              bsim4 16    
+          capacitor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 1     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.793 ms, elapsed = 57.6069 ms.
+Time accumulated: CPU = 250.575 ms, elapsed = 341.874 ms.
+Peak resident memory used = 61.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+********************************************************
+Transient Analysis `Capacitancia': time = (1 ns -> 4 ns)
+********************************************************
+
+Notice from spectre during IC analysis, during transient analysis `Capacitancia', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X1.net_001) = 23.2741 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.617 ms, elapsed = 1.6191 ms.
+
+Notice from spectre during transient analysis `Capacitancia', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file XNOR.raw/Capacitancia.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 4 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   9       (voltage)
+
+........9......
+
+Notice from spectre at time = 1.55746 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........
+
+Notice from spectre at time = 1.61746 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8.
+
+Notice from spectre at time = 1.67746 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8..
+
+Notice from spectre at time = 1.73746 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8....
+
+Notice from spectre at time = 1.79746 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `Capacitancia', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.089 V
+I: I(Va:p) = 93.33 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 60 ps, default 80 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (40.0 %)      1 (75.0 %)      2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.665 ms, elapsed = 1.66702 ms.
+Intrinsic tran analysis time:    CPU = 20.949 ms, elapsed = 41.0969 ms.
+Total time required for tran analysis `Capacitancia': CPU = 24.972 ms, elapsed = 45.121 ms.
+Time accumulated: CPU = 281.354 ms, elapsed = 392.82 ms.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    37 notices suppressed.
+
+
+Aggregate audit (10:25:10 AM, Mon Jan 13, 2020):
+Time used: CPU = 285 ms, elapsed = 442 ms, util. = 64.4%.
+Time spent in licensing: elapsed = 53.8 ms, percentage of total = 12.2%.
+Peak memory used = 65.1 Mbytes.
+Simulation started at: 10:25:10 AM, Mon Jan 13, 2020, ended at: 10:25:10 AM, Mon Jan 13, 2020, with elapsed time (wall clock): 442 ms.
+spectre completes with 0 errors, 2 warnings, and 9 notices.

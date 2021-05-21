@@ -1,0 +1,13 @@
+Exported variables from results directory:  ./INV.raw/
+
+date               :  3:46:10 PM, Thur Jan 9, 2020
+design             :  *Inversor
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Capacitancia
+Analysis Type      :  tran
+Cap             = -1.16752e-15 
+
+

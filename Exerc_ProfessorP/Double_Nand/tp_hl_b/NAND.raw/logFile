@@ -1,0 +1,165 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Fri Feb 14 09:51:00 2020"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "9:51:00 AM, Fri Feb 14, 2020"
+"design" "*Nand"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-000_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-000_DifTempo.tran.tran"
+"PSF"
+"DifTempo-foreach"
+("time")
+"Transient Analysis `DifTempo-000_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-foreach-000-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-000.meas_tran"
+"PSF"
+"DifTempo_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap" 2.00000e-16
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-001_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-001_DifTempo.tran.tran"
+"PSF"
+"DifTempo-foreach"
+("time")
+"Transient Analysis `DifTempo-001_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-foreach-001-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-001.meas_tran"
+"PSF"
+"DifTempo_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap" 4.00000e-16
+)
+
+"DifTempo-foreach" "analysisInst" (
+"foreach"
+"DifTempo.foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo_meas-meas_foreach" "analysisInst" (
+"meas_foreach"
+"DifTempo_meas.meas_foreach"
+"PSF"
+""
+("cap")
+"Foreach of variable cap parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"DifTempo-002_DifTempo-tran" "analysisInst" (
+"tran"
+"DifTempo-002_DifTempo.tran.tran"
+"PSF"
+"DifTempo-foreach"
+("time")
+"Transient Analysis `DifTempo-002_DifTempo': time = (0 s -> 3 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"cap" 8.00000e-16
+)
+
+"DifTempo-foreach-002-meas_tran" "analysisInst" (
+"meas_tran"
+"DifTempo-foreach-002.meas_tran"
+"PSF"
+"DifTempo_meas-meas_foreach"
+()
+"Measurement Results for DifTempo Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap" 8.00000e-16
+)
+
+END

@@ -1,0 +1,17 @@
+alias measurement FallTime {
+	run tran (stop = 3n)
+	export real InvRise= risetime(sig=V(out1),initval=0,finalval=1)
+	export real NandFall= falltime(sig=V(out2),initval=1,finalval=0)
+	export real XnorFall= falltime(sig=V(out3),initval=1,finalval=0)
+	export real OrFall= falltime(sig=V(out),initval=1,finalval=0)
+}
+alias measurement RiseTime {
+	run tran (start = 3n, stop = 6n)
+	export real InvFall= falltime(sig=V(out1),initval=1,finalval=0)
+	export real NandRise= risetime(sig=V(out2),initval=0,finalval=1)
+	export real XnorRise= risetime(sig=V(out3),initval=0,finalval=1)
+	export real OrRise= risetime(sig=V(out),initval=0,finalval=1)
+}
+
+run FallTime
+run RiseTime

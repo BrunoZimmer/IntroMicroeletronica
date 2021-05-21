@@ -1,0 +1,4848 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 29406
+Memory  available: 746.1601 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3332.7 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 54.5 %, 58.0 %, 58.2 %
+
+
+Simulating `NAND.scs' on itacolomi.lapsi at 12:38:09 PM, Mon Jan 13, 2020 (process id: 29406).
+Current working directory: /home/brunozimmer/Documentos/Lab05a/Nand/fall
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        frtime.mdl NAND.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Nand/fall/NAND.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Nand/fall/NAND2.spi
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Nand/fall/45nm_LP.pm
+Time for NDB Parsing: CPU = 210.55 ms, elapsed = 242.674 ms.
+Time accumulated: CPU = 229.882 ms, elapsed = 242.683 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 17.866 ms, elapsed = 17.947 ms.
+Time accumulated: CPU = 247.969 ms, elapsed = 260.88 ms.
+Peak resident memory used = 59.6 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-2468): A MDL control file 'frtime.mdl' is specified.  All .measure, .print and .probe statements in netlist 'NAND.scs' are ignored.
+
+
+
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .print not found, ignoring
+
+Time for EDB Visiting: CPU = 920 us, elapsed = 952.005 us.
+Time accumulated: CPU = 249.042 ms, elapsed = 262.003 ms.
+Peak resident memory used = 60.3 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 6
+              bsim4 8     
+          capacitor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 1     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.484 ms, elapsed = 54.786 ms.
+Time accumulated: CPU = 251.662 ms, elapsed = 316.942 ms.
+Peak resident memory used = 61.7 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************************************************************
+Transient Analysis `FallTime-000_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 825 us, elapsed = 825.882 us.
+
+Notice from spectre during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-000_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.26806 ns during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.32806 ns during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.38806 ns during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.44806 ns during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.50806 ns during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `FallTime-000_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.071 V
+I: I(Va:p) = 70.84 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (61.9 %)      1 (76.7 %)      2 (100.0 %)     3 (79.5 %)
+        Other   
+Initial condition solution time: CPU = 893 us, elapsed = 895.023 us.
+Intrinsic tran analysis time:    CPU = 14.229 ms, elapsed = 45.7649 ms.
+Total time required for tran analysis `FallTime-000_FallTime': CPU = 16.61 ms, elapsed = 48.146 ms.
+Time accumulated: CPU = 276.629 ms, elapsed = 486.743 ms.
+Peak resident memory used = 64.2 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-001_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 540 us, elapsed = 540.972 us.
+
+Notice from spectre during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-001_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........
+
+Notice from spectre at time = 1.20812 ns during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.26736 ns during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.32736 ns during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.38736 ns during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.44736 ns during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             81
+
+Notice from spectre during transient analysis `FallTime-001_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.044 V
+I: I(Va:p) = 52.15 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.7 %)      1 (67.3 %)      2 (100.0 %)     3 (83.9 %)
+        Other   
+Initial condition solution time: CPU = 590 us, elapsed = 590.801 us.
+Intrinsic tran analysis time:    CPU = 13.259 ms, elapsed = 37.5409 ms.
+Total time required for tran analysis `FallTime-001_FallTime': CPU = 15.252 ms, elapsed = 39.5372 ms.
+Time accumulated: CPU = 299.341 ms, elapsed = 603.09 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-002_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 536 us, elapsed = 536.919 us.
+
+Notice from spectre during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-002_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.48216 ns during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.54216 ns during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.60216 ns during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.66216 ns during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.72216 ns during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `FallTime-002_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.026 V
+I: I(Va:p) = 36.41 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.8 %)      1 (63.6 %)      2 (100.0 %)     3 (86.6 %)
+        Other   
+Initial condition solution time: CPU = 579 us, elapsed = 579.834 us.
+Intrinsic tran analysis time:    CPU = 14.231 ms, elapsed = 37.782 ms.
+Total time required for tran analysis `FallTime-002_FallTime': CPU = 15.962 ms, elapsed = 39.5138 ms.
+Time accumulated: CPU = 322.446 ms, elapsed = 719.969 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-003_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 536 us, elapsed = 536.919 us.
+
+Notice from spectre during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-003_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.66825 ns during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.72825 ns during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.78825 ns during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.84825 ns during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.90825 ns during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `FallTime-003_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.016 V
+I: I(Vd:p) = 23.89 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.0 %)      1 (60.3 %)      2 (100.0 %)     3 (88.6 %)
+        Other   
+Initial condition solution time: CPU = 590 us, elapsed = 597 us.
+Intrinsic tran analysis time:    CPU = 14.526 ms, elapsed = 42.1209 ms.
+Total time required for tran analysis `FallTime-003_FallTime': CPU = 16.408 ms, elapsed = 44.1711 ms.
+Time accumulated: CPU = 346.036 ms, elapsed = 841.409 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-004_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 562 us, elapsed = 562.191 us.
+
+Notice from spectre during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-004_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.87323 ns during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.93323 ns during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 1.99323 ns during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.05323 ns during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.11323 ns during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `FallTime-004_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.008 V
+I: I(Vd:p) = 15.01 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (47.2 %)      1 (56.7 %)      2 (100.0 %)     3 (90.0 %)
+        Other   
+Initial condition solution time: CPU = 606 us, elapsed = 607.967 us.
+Intrinsic tran analysis time:    CPU = 13.378 ms, elapsed = 37.3499 ms.
+Total time required for tran analysis `FallTime-004_FallTime': CPU = 15.179 ms, elapsed = 39.1519 ms.
+Time accumulated: CPU = 368.508 ms, elapsed = 952.696 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    15 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-005_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 565 us, elapsed = 566.006 us.
+
+Notice from spectre during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-005_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 1.99433 ns during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.05433 ns during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.11433 ns during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.1275 ns during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 2.54549 ns during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `FallTime-005_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Vd:p) = 9.81 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (45.1 %)      1 (56.9 %)      2 (100.0 %)     3 (88.5 %)
+        Other   
+Initial condition solution time: CPU = 609 us, elapsed = 611.067 us.
+Intrinsic tran analysis time:    CPU = 14.465 ms, elapsed = 46.144 ms.
+Total time required for tran analysis `FallTime-005_FallTime': CPU = 16.4 ms, elapsed = 48.08 ms.
+Time accumulated: CPU = 391.869 ms, elapsed = 1.0869 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    8 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-006_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 551 us, elapsed = 551.939 us.
+
+Notice from spectre during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-006_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42723 ns during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.67716 ns during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........
+
+Notice from spectre at time = 2.73716 ns during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1.
+
+Notice from spectre at time = 2.79716 ns during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1...
+
+Notice from spectre at time = 2.85716 ns during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             65
+
+Notice from spectre during transient analysis `FallTime-006_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 6.051 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.9 %)      1 (54.9 %)      2 (100.0 %)     3 (81.7 %)
+        Other   
+Initial condition solution time: CPU = 597 us, elapsed = 597.954 us.
+Intrinsic tran analysis time:    CPU = 12.679 ms, elapsed = 36.413 ms.
+Total time required for tran analysis `FallTime-006_FallTime': CPU = 14.427 ms, elapsed = 38.162 ms.
+Time accumulated: CPU = 413.24 ms, elapsed = 1.20206 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-007_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 584 us, elapsed = 634.909 us.
+
+Notice from spectre during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-007_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18996 ns during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.24996 ns during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30996 ns during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36996 ns during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42996 ns during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `FallTime-007_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.069 V
+I: I(Va:p) = 75.22 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (56.5 %)      1 (50.8 %)      2 (100.0 %)     3 (75.8 %)
+        Other   
+Initial condition solution time: CPU = 641 us, elapsed = 699.043 us.
+Intrinsic tran analysis time:    CPU = 13.602 ms, elapsed = 36.7811 ms.
+Total time required for tran analysis `FallTime-007_FallTime': CPU = 15.624 ms, elapsed = 38.976 ms.
+Time accumulated: CPU = 437.707 ms, elapsed = 1.3697 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    27 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-008_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 576 us, elapsed = 632.048 us.
+
+Notice from spectre during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-008_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.23124 ns during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.29124 ns during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.35124 ns during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.41124 ns during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.47124 ns during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             81
+
+Notice from spectre during transient analysis `FallTime-008_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.043 V
+I: I(Va:p) = 50.62 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.9 %)      1 (54.9 %)      2 (100.0 %)     3 (72.7 %)
+        Other   
+Initial condition solution time: CPU = 633 us, elapsed = 694.99 us.
+Intrinsic tran analysis time:    CPU = 14.241 ms, elapsed = 39.4878 ms.
+Total time required for tran analysis `FallTime-008_FallTime': CPU = 16.298 ms, elapsed = 41.8298 ms.
+Time accumulated: CPU = 461.386 ms, elapsed = 1.48927 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-009_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 542 us, elapsed = 544.071 us.
+
+Notice from spectre during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-009_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.4389 ns during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.4989 ns during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.5589 ns during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.6189 ns during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.6789 ns during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             87
+
+Notice from spectre during transient analysis `FallTime-009_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.026 V
+I: I(Va:p) = 36.24 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.9 %)      1 (55.8 %)      2 (100.0 %)     3 (70.3 %)
+        Other   
+Initial condition solution time: CPU = 595 us, elapsed = 602.007 us.
+Intrinsic tran analysis time:    CPU = 14.271 ms, elapsed = 37.931 ms.
+Total time required for tran analysis `FallTime-009_FallTime': CPU = 16.152 ms, elapsed = 39.9339 ms.
+Time accumulated: CPU = 484.979 ms, elapsed = 1.60413 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-010_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 586 us, elapsed = 587.94 us.
+
+Notice from spectre during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-010_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.65817 ns during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.71817 ns during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.77817 ns during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.83817 ns during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.89817 ns during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `FallTime-010_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.016 V
+I: I(Vd:p) = 23.3 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.2 %)      1 (55.2 %)      2 (100.0 %)     3 (66.5 %)
+        Other   
+Initial condition solution time: CPU = 641 us, elapsed = 642.061 us.
+Intrinsic tran analysis time:    CPU = 13.935 ms, elapsed = 37.8349 ms.
+Total time required for tran analysis `FallTime-010_FallTime': CPU = 15.782 ms, elapsed = 39.6831 ms.
+Time accumulated: CPU = 508.079 ms, elapsed = 1.72085 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-011_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 591 us, elapsed = 613.928 us.
+
+Notice from spectre during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-011_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.8632 ns during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.9232 ns during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 1.9832 ns during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.0432 ns during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.1032 ns during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `FallTime-011_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.008 V
+I: I(Vd:p) = 14.68 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (61.0 %)      1 (53.7 %)      2 (100.0 %)     3 (64.8 %)
+        Other   
+Initial condition solution time: CPU = 649 us, elapsed = 677.109 us.
+Intrinsic tran analysis time:    CPU = 14.294 ms, elapsed = 39.6018 ms.
+Total time required for tran analysis `FallTime-011_FallTime': CPU = 16.362 ms, elapsed = 41.827 ms.
+Time accumulated: CPU = 531.751 ms, elapsed = 1.83952 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    15 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-012_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 587 us, elapsed = 650.883 us.
+
+Notice from spectre during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-012_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.06473 ns during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.12473 ns during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2..
+
+Notice from spectre at time = 2.54014 ns during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 2.60014 ns during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2......
+
+Notice from spectre at time = 2.66014 ns during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `FallTime-012_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Vd:p) = 9.021 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (63.3 %)      1 (52.4 %)      2 (100.0 %)     3 (63.2 %)
+        Other   
+Initial condition solution time: CPU = 643 us, elapsed = 712.156 us.
+Intrinsic tran analysis time:    CPU = 14.57 ms, elapsed = 38.5451 ms.
+Total time required for tran analysis `FallTime-012_FallTime': CPU = 16.472 ms, elapsed = 40.6539 ms.
+Time accumulated: CPU = 556.011 ms, elapsed = 1.95543 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    6 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-013_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 583 us, elapsed = 1.0941 ms.
+
+Notice from spectre during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-013_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42741 ns during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.69059 ns during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1
+
+Notice from spectre at time = 2.75059 ns during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1..
+
+Notice from spectre at time = 2.81059 ns during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1...
+
+Notice from spectre at time = 2.87059 ns during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             65
+
+Notice from spectre during transient analysis `FallTime-013_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 5.94 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (65.5 %)      1 (51.0 %)      2 (100.0 %)     3 (62.4 %)
+        Other   
+Initial condition solution time: CPU = 642 us, elapsed = 1.15991 ms.
+Intrinsic tran analysis time:    CPU = 13.44 ms, elapsed = 37.8819 ms.
+Total time required for tran analysis `FallTime-013_FallTime': CPU = 15.362 ms, elapsed = 40.437 ms.
+Time accumulated: CPU = 579.14 ms, elapsed = 2.07193 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-014_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 556 us, elapsed = 556.946 us.
+
+Notice from spectre during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-014_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.....
+
+Notice from spectre at time = 1.07301 ns during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_0__m0_m2__m0:int_b.
+
+........9........8........7........
+
+Notice from spectre at time = 1.23924 ns during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.29924 ns during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.35924 ns during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.41924 ns during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `FallTime-014_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.064 V
+I: I(Va:p) = 73 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (68.1 %)      1 (49.1 %)      2 (100.0 %)     3 (59.2 %)
+        Other   
+Initial condition solution time: CPU = 602 us, elapsed = 602.961 us.
+Intrinsic tran analysis time:    CPU = 14.019 ms, elapsed = 37.6229 ms.
+Total time required for tran analysis `FallTime-014_FallTime': CPU = 15.949 ms, elapsed = 39.5539 ms.
+Time accumulated: CPU = 604.282 ms, elapsed = 2.23745 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    27 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-015_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 561 us, elapsed = 612.02 us.
+
+Notice from spectre during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-015_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.27557 ns during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.33557 ns during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.39557 ns during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.45557 ns during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.51557 ns during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             90
+
+Notice from spectre during transient analysis `FallTime-015_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.041 V
+I: I(Va:p) = 49.26 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (69.7 %)      1 (48.5 %)      2 (100.0 %)     3 (58.4 %)
+        Other   
+Initial condition solution time: CPU = 608 us, elapsed = 665.188 us.
+Intrinsic tran analysis time:    CPU = 14.303 ms, elapsed = 39.968 ms.
+Total time required for tran analysis `FallTime-015_FallTime': CPU = 16.139 ms, elapsed = 41.9738 ms.
+Time accumulated: CPU = 627.671 ms, elapsed = 2.35666 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-016_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 556 us, elapsed = 557.184 us.
+
+Notice from spectre during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-016_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.4283 ns during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.4883 ns during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.5483 ns during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.6083 ns during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.6683 ns during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             87
+
+Notice from spectre during transient analysis `FallTime-016_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.026 V
+I: I(Va:p) = 34.74 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (71.2 %)      1 (47.3 %)      2 (100.0 %)     3 (57.4 %)
+        Other   
+Initial condition solution time: CPU = 611 us, elapsed = 617.027 us.
+Intrinsic tran analysis time:    CPU = 14.36 ms, elapsed = 38.1289 ms.
+Total time required for tran analysis `FallTime-016_FallTime': CPU = 16.298 ms, elapsed = 40.3371 ms.
+Time accumulated: CPU = 651.488 ms, elapsed = 2.4721 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-017_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 547 us, elapsed = 579.119 us.
+
+Notice from spectre during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-017_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.63967 ns during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.69967 ns during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.75967 ns during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.81967 ns during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.87967 ns during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `FallTime-017_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.015 V
+I: I(Vd:p) = 22 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (72.5 %)      1 (46.6 %)      2 (100.0 %)     3 (56.5 %)
+        Other   
+Initial condition solution time: CPU = 602 us, elapsed = 643.015 us.
+Intrinsic tran analysis time:    CPU = 14.86 ms, elapsed = 40.5629 ms.
+Total time required for tran analysis `FallTime-017_FallTime': CPU = 16.888 ms, elapsed = 42.7878 ms.
+Time accumulated: CPU = 675.876 ms, elapsed = 2.59108 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-018_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 557 us, elapsed = 557.899 us.
+
+Notice from spectre during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-018_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.90655 ns during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.96655 ns during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.02655 ns during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.08655 ns during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.14655 ns during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             76
+
+Notice from spectre during transient analysis `FallTime-018_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.008 V
+I: I(Vd:p) = 14.57 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (73.8 %)      1 (46.4 %)      2 (100.0 %)     3 (55.6 %)
+        Other   
+Initial condition solution time: CPU = 604 us, elapsed = 605.106 us.
+Intrinsic tran analysis time:    CPU = 13.652 ms, elapsed = 37.4589 ms.
+Total time required for tran analysis `FallTime-018_FallTime': CPU = 15.616 ms, elapsed = 39.427 ms.
+Time accumulated: CPU = 698.916 ms, elapsed = 2.7048 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    15 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-019_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 554 us, elapsed = 554.8 us.
+
+Notice from spectre during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-019_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.02606 ns during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.08606 ns during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.1275 ns during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.
+
+Notice from spectre at time = 2.48821 ns during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 2.54821 ns during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `FallTime-019_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Vd:p) = 9.152 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (75.1 %)      1 (47.3 %)      2 (100.0 %)     3 (56.8 %)
+        Other   
+Initial condition solution time: CPU = 599 us, elapsed = 601.053 us.
+Intrinsic tran analysis time:    CPU = 13.393 ms, elapsed = 54.281 ms.
+Total time required for tran analysis `FallTime-019_FallTime': CPU = 15.237 ms, elapsed = 56.129 ms.
+Time accumulated: CPU = 721.371 ms, elapsed = 2.8465 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    8 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-020_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 525 us, elapsed = 527.143 us.
+
+Notice from spectre during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-020_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30786 ns during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42786 ns during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........
+
+Notice from spectre at time = 2.71627 ns during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1
+
+Notice from spectre at time = 2.77627 ns during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1..
+
+Notice from spectre at time = 2.83627 ns during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             67
+
+Notice from spectre during transient analysis `FallTime-020_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 5.677 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (76.0 %)      1 (47.0 %)      2 (100.0 %)     3 (56.5 %)
+        Other   
+Initial condition solution time: CPU = 584 us, elapsed = 586.033 us.
+Intrinsic tran analysis time:    CPU = 12.419 ms, elapsed = 35.7358 ms.
+Total time required for tran analysis `FallTime-020_FallTime': CPU = 14.174 ms, elapsed = 37.4908 ms.
+Time accumulated: CPU = 743.09 ms, elapsed = 2.96147 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-021_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 557 us, elapsed = 558.138 us.
+
+Notice from spectre during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-021_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2615 ns during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.3215 ns during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.3815 ns during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.4415 ns during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.5015 ns during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `FallTime-021_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.062 V
+I: I(Va:p) = 64.41 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (77.5 %)      1 (46.4 %)      2 (100.0 %)     3 (54.2 %)
+        Other   
+Initial condition solution time: CPU = 600 us, elapsed = 601.053 us.
+Intrinsic tran analysis time:    CPU = 13.869 ms, elapsed = 37.539 ms.
+Total time required for tran analysis `FallTime-021_FallTime': CPU = 15.661 ms, elapsed = 39.5181 ms.
+Time accumulated: CPU = 768.357 ms, elapsed = 3.13127 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-022_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 566 us, elapsed = 566.006 us.
+
+Notice from spectre during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-022_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.39355 ns during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.45355 ns during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.51355 ns during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.57355 ns during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.63355 ns during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `FallTime-022_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.034 V
+I: I(Va:p) = 42.61 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (78.4 %)      1 (46.2 %)      2 (100.0 %)     3 (55.0 %)
+        Other   
+Initial condition solution time: CPU = 620 us, elapsed = 626.087 us.
+Intrinsic tran analysis time:    CPU = 17.361 ms, elapsed = 55.974 ms.
+Total time required for tran analysis `FallTime-022_FallTime': CPU = 19.254 ms, elapsed = 58.0299 ms.
+Time accumulated: CPU = 794.887 ms, elapsed = 3.26535 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-023_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 544 us, elapsed = 545.979 us.
+
+Notice from spectre during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-023_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.33429 ns during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.39429 ns during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.45429 ns during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.51429 ns during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.57429 ns during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             82
+
+Notice from spectre during transient analysis `FallTime-023_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.023 V
+I: I(Va:p) = 34.56 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (77.4 %)      1 (48.0 %)      2 (100.0 %)     3 (56.3 %)
+        Other   
+Initial condition solution time: CPU = 586 us, elapsed = 587.94 us.
+Intrinsic tran analysis time:    CPU = 14.158 ms, elapsed = 41.302 ms.
+Total time required for tran analysis `FallTime-023_FallTime': CPU = 15.946 ms, elapsed = 43.0889 ms.
+Time accumulated: CPU = 818.294 ms, elapsed = 3.38376 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    24 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-024_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 543 us, elapsed = 543.118 us.
+
+Notice from spectre during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-024_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.70949 ns during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.76949 ns during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.82949 ns during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.88949 ns during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.94949 ns during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             82
+
+Notice from spectre during transient analysis `FallTime-024_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.014 V
+I: I(Va:p) = 19.7 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (76.1 %)      1 (50.0 %)      2 (100.0 %)     3 (55.5 %)
+        Other   
+Initial condition solution time: CPU = 591 us, elapsed = 590.801 us.
+Intrinsic tran analysis time:    CPU = 13.984 ms, elapsed = 37.858 ms.
+Total time required for tran analysis `FallTime-024_FallTime': CPU = 15.733 ms, elapsed = 39.6061 ms.
+Time accumulated: CPU = 841.702 ms, elapsed = 3.50534 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    18 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-025_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 539 us, elapsed = 540.018 us.
+
+Notice from spectre during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-025_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 1.9948 ns during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.0548 ns during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.1148 ns during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.1748 ns during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3..
+
+Notice from spectre at time = 2.2348 ns during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             79
+
+Notice from spectre during transient analysis `FallTime-025_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.007 V
+I: I(Vd:p) = 13.01 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (74.9 %)      1 (49.3 %)      2 (100.0 %)     3 (57.0 %)
+        Other   
+Initial condition solution time: CPU = 590 us, elapsed = 596.046 us.
+Intrinsic tran analysis time:    CPU = 13.669 ms, elapsed = 37.4129 ms.
+Total time required for tran analysis `FallTime-025_FallTime': CPU = 15.638 ms, elapsed = 39.499 ms.
+Time accumulated: CPU = 865.073 ms, elapsed = 3.62205 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    13 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-026_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 573 us, elapsed = 572.92 us.
+
+Notice from spectre during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-026_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.09736 ns during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.1275 ns during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2
+
+Notice from spectre at time = 2.47464 ns during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2..
+
+Notice from spectre at time = 2.53464 ns during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 2.59464 ns during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `FallTime-026_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Vd:p) = 8.535 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (73.5 %)      1 (48.9 %)      2 (100.0 %)     3 (58.4 %)
+        Other   
+Initial condition solution time: CPU = 627 us, elapsed = 634.193 us.
+Intrinsic tran analysis time:    CPU = 13.69 ms, elapsed = 44.0729 ms.
+Total time required for tran analysis `FallTime-026_FallTime': CPU = 15.727 ms, elapsed = 46.226 ms.
+Time accumulated: CPU = 888.295 ms, elapsed = 3.74538 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    7 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-027_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 539 us, elapsed = 540.018 us.
+
+Notice from spectre during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-027_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18951 ns during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30951 ns during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42951 ns during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1..
+
+Notice from spectre at time = 2.81966 ns during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1....
+
+Notice from spectre at time = 2.87966 ns during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             64
+
+Notice from spectre during transient analysis `FallTime-027_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 5.419 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (70.3 %)      1 (51.0 %)      2 (100.0 %)     3 (55.5 %)
+        Other   
+Initial condition solution time: CPU = 582 us, elapsed = 592.947 us.
+Intrinsic tran analysis time:    CPU = 11.595 ms, elapsed = 303.511 ms.
+Total time required for tran analysis `FallTime-027_FallTime': CPU = 13.433 ms, elapsed = 305.472 ms.
+Time accumulated: CPU = 908.842 ms, elapsed = 4.12961 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-028_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 558 us, elapsed = 557.899 us.
+
+Notice from spectre during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-028_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.29322 ns during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.35322 ns during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.41322 ns during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.47322 ns during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.53322 ns during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `FallTime-028_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.053 V
+I: I(Va:p) = 59.74 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (68.5 %)      1 (53.1 %)      2 (100.0 %)     3 (54.4 %)
+        Other   
+Initial condition solution time: CPU = 622 us, elapsed = 626.802 us.
+Intrinsic tran analysis time:    CPU = 14.064 ms, elapsed = 45.0869 ms.
+Total time required for tran analysis `FallTime-028_FallTime': CPU = 15.956 ms, elapsed = 47.1749 ms.
+Time accumulated: CPU = 933.563 ms, elapsed = 4.30471 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-029_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 567 us, elapsed = 567.913 us.
+
+Notice from spectre during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-029_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.3234 ns during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.3834 ns during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.4434 ns during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.5034 ns during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.5634 ns during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `FallTime-029_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.036 V
+I: I(Va:p) = 38.65 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (67.4 %)      1 (54.4 %)      2 (100.0 %)     3 (53.8 %)
+        Other   
+Initial condition solution time: CPU = 626 us, elapsed = 633.955 us.
+Intrinsic tran analysis time:    CPU = 14.203 ms, elapsed = 37.7181 ms.
+Total time required for tran analysis `FallTime-029_FallTime': CPU = 16.111 ms, elapsed = 39.7549 ms.
+Time accumulated: CPU = 957.214 ms, elapsed = 4.4224 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    24 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-030_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 574 us, elapsed = 576.019 us.
+
+Notice from spectre during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-030_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.15178 ns during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.40084 ns during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46084 ns during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.52084 ns during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.58084 ns during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `FallTime-030_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.019 V
+I: I(Va:p) = 29.35 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (66.6 %)      1 (55.6 %)      2 (100.0 %)     3 (52.9 %)
+        Other   
+Initial condition solution time: CPU = 617 us, elapsed = 618.935 us.
+Intrinsic tran analysis time:    CPU = 13.612 ms, elapsed = 37.173 ms.
+Total time required for tran analysis `FallTime-030_FallTime': CPU = 15.547 ms, elapsed = 39.1071 ms.
+Time accumulated: CPU = 980.283 ms, elapsed = 4.54737 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    24 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-031_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 567 us, elapsed = 567.913 us.
+
+Notice from spectre during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-031_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.76839 ns during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.82839 ns during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.88839 ns during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.94839 ns during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 2.00839 ns during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             82
+
+Notice from spectre during transient analysis `FallTime-031_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.011 V
+I: I(Va:p) = 18.81 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (65.6 %)      1 (56.9 %)      2 (100.0 %)     3 (52.6 %)
+        Other   
+Initial condition solution time: CPU = 621 us, elapsed = 626.802 us.
+Intrinsic tran analysis time:    CPU = 14.124 ms, elapsed = 38.6889 ms.
+Total time required for tran analysis `FallTime-031_FallTime': CPU = 15.999 ms, elapsed = 40.7269 ms.
+Time accumulated: CPU = 1.00387 s, elapsed = 4.6735 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    17 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-032_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 551 us, elapsed = 552.177 us.
+
+Notice from spectre during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-032_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 1.98216 ns during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.04216 ns during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.10216 ns during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.16216 ns during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3..
+
+Notice from spectre at time = 2.22216 ns during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             79
+
+Notice from spectre during transient analysis `FallTime-032_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.007 V
+I: I(Vd:p) = 11.37 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (64.7 %)      1 (58.0 %)      2 (100.0 %)     3 (52.0 %)
+        Other   
+Initial condition solution time: CPU = 595 us, elapsed = 596.046 us.
+Intrinsic tran analysis time:    CPU = 13.901 ms, elapsed = 37.8439 ms.
+Total time required for tran analysis `FallTime-032_FallTime': CPU = 15.882 ms, elapsed = 39.8281 ms.
+Time accumulated: CPU = 1.02743 s, elapsed = 4.79868 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    13 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-033_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 597 us, elapsed = 597.954 us.
+
+Notice from spectre during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-033_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4........3........2.
+
+Notice from spectre at time = 2.48819 ns during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 2.54819 ns during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 2.60819 ns during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2......
+
+Notice from spectre at time = 2.66819 ns during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3........2........
+
+Notice from spectre at time = 2.72819 ns during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `FallTime-033_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Vd:p) = 7.609 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (64.3 %)      1 (59.1 %)      2 (100.0 %)     3 (51.3 %)
+        Other   
+Initial condition solution time: CPU = 663 us, elapsed = 664.949 us.
+Intrinsic tran analysis time:    CPU = 13.981 ms, elapsed = 37.8768 ms.
+Total time required for tran analysis `FallTime-033_FallTime': CPU = 15.944 ms, elapsed = 39.839 ms.
+Time accumulated: CPU = 1.05052 s, elapsed = 4.92289 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    5 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-034_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 558 us, elapsed = 558.853 us.
+
+Notice from spectre during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-034_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18992 ns during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.24992 ns during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30992 ns during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36992 ns during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1.....
+
+Notice from spectre at time = 2.9106 ns during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             63
+
+Notice from spectre during transient analysis `FallTime-034_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 4.874 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (63.1 %)      1 (60.2 %)      2 (100.0 %)     3 (50.9 %)
+        Other   
+Initial condition solution time: CPU = 609 us, elapsed = 615.835 us.
+Intrinsic tran analysis time:    CPU = 12.402 ms, elapsed = 49.1869 ms.
+Total time required for tran analysis `FallTime-034_FallTime': CPU = 14.301 ms, elapsed = 51.2049 ms.
+Time accumulated: CPU = 1.07208 s, elapsed = 5.05944 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    2 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-035_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 556 us, elapsed = 558.138 us.
+
+Notice from spectre during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-035_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.386 ns during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.446 ns during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.506 ns during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.566 ns during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.626 ns during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             82
+
+Notice from spectre during transient analysis `FallTime-035_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.038 V
+I: I(Va:p) = 58.31 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (61.7 %)      1 (61.6 %)      2 (100.0 %)     3 (50.2 %)
+        Other   
+Initial condition solution time: CPU = 614 us, elapsed = 622.988 us.
+Intrinsic tran analysis time:    CPU = 13.899 ms, elapsed = 49.6461 ms.
+Total time required for tran analysis `FallTime-035_FallTime': CPU = 15.806 ms, elapsed = 51.765 ms.
+Time accumulated: CPU = 1.09699 s, elapsed = 5.24355 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-036_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 539 us, elapsed = 540.018 us.
+
+Notice from spectre during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-036_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.48054 ns during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.54054 ns during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.60054 ns during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.66054 ns during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.72054 ns during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `FallTime-036_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.029 V
+I: I(Va:p) = 32.28 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (60.9 %)      1 (62.6 %)      2 (100.0 %)     3 (50.0 %)
+        Other   
+Initial condition solution time: CPU = 595 us, elapsed = 601.053 us.
+Intrinsic tran analysis time:    CPU = 14.179 ms, elapsed = 46.509 ms.
+Total time required for tran analysis `FallTime-036_FallTime': CPU = 16.142 ms, elapsed = 49.1209 ms.
+Time accumulated: CPU = 1.12058 s, elapsed = 5.3909 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-037_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 517 us, elapsed = 517.845 us.
+
+Notice from spectre during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-037_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.14247 ns during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.15599 ns during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46465 ns during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.52465 ns during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.58465 ns during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `FallTime-037_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.02 V
+I: I(Va:p) = 24.11 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (60.5 %)      1 (63.7 %)      2 (100.0 %)     3 (49.4 %)
+        Other   
+Initial condition solution time: CPU = 557 us, elapsed = 558.853 us.
+Intrinsic tran analysis time:    CPU = 13.879 ms, elapsed = 47.8201 ms.
+Total time required for tran analysis `FallTime-037_FallTime': CPU = 15.632 ms, elapsed = 49.6149 ms.
+Time accumulated: CPU = 1.14369 s, elapsed = 5.53345 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    24 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-038_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 528 us, elapsed = 529.051 us.
+
+Notice from spectre during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-038_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.24879 ns during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.66864 ns during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.72864 ns during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.78864 ns during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.84864 ns during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `FallTime-038_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.009 V
+I: I(Va:p) = 17.71 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.6 %)      1 (64.6 %)      2 (100.0 %)     3 (49.1 %)
+        Other   
+Initial condition solution time: CPU = 578 us, elapsed = 584.841 us.
+Intrinsic tran analysis time:    CPU = 13.674 ms, elapsed = 46.3989 ms.
+Total time required for tran analysis `FallTime-038_FallTime': CPU = 15.52 ms, elapsed = 48.367 ms.
+Time accumulated: CPU = 1.16669 s, elapsed = 5.67346 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-039_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 535 us, elapsed = 537.157 us.
+
+Notice from spectre during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-039_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.04227 ns during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.10227 ns during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.16227 ns during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3..
+
+Notice from spectre at time = 2.22227 ns during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+
+........9........8........7........6........5........4........3....
+
+Notice from spectre at time = 2.28227 ns during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m0.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             78
+
+Notice from spectre during transient analysis `FallTime-039_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.006 V
+I: I(Va:p) = 10.34 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.8 %)      1 (65.4 %)      2 (100.0 %)     3 (48.5 %)
+        Other   
+Initial condition solution time: CPU = 593 us, elapsed = 602.961 us.
+Intrinsic tran analysis time:    CPU = 13.946 ms, elapsed = 48.316 ms.
+Total time required for tran analysis `FallTime-039_FallTime': CPU = 15.798 ms, elapsed = 50.38 ms.
+Time accumulated: CPU = 1.18999 s, elapsed = 5.81765 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    12 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-040_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 549 us, elapsed = 549.793 us.
+
+Notice from spectre during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-040_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4........3........2..
+
+Notice from spectre at time = 2.52143 ns during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 2.58143 ns during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.64143 ns during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.70143 ns during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1
+
+Notice from spectre at time = 2.76143 ns during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `FallTime-040_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Vd:p) = 6.369 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.9 %)      1 (65.1 %)      2 (100.0 %)     3 (48.6 %)
+        Other   
+Initial condition solution time: CPU = 593 us, elapsed = 600.1 us.
+Intrinsic tran analysis time:    CPU = 14.355 ms, elapsed = 41.9381 ms.
+Total time required for tran analysis `FallTime-040_FallTime': CPU = 16.216 ms, elapsed = 43.936 ms.
+Time accumulated: CPU = 1.21367 s, elapsed = 5.95268 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    4 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-041_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 541 us, elapsed = 543.118 us.
+
+Notice from spectre during transient analysis `FallTime-041_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-041_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.4892 ns during transient analysis `FallTime-041_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1........
+
+Notice from spectre at time = 3 ns during transient analysis `FallTime-041_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             64
+
+Notice from spectre during transient analysis `FallTime-041_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 4.087 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.7 %)      1 (64.2 %)      2 (100.0 %)     3 (48.0 %)
+        Other   
+Initial condition solution time: CPU = 597 us, elapsed = 602.961 us.
+Intrinsic tran analysis time:    CPU = 10.403 ms, elapsed = 33.7172 ms.
+Total time required for tran analysis `FallTime-041_FallTime': CPU = 12.223 ms, elapsed = 35.666 ms.
+Time accumulated: CPU = 1.2332 s, elapsed = 6.07823 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+****************************************************************
+Transient Analysis `FallTime-042_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 529 us, elapsed = 530.005 us.
+
+Notice from spectre during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-042_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.75631 ns during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.81631 ns during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.87631 ns during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.93631 ns during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 1.99631 ns during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             81
+
+Notice from spectre during transient analysis `FallTime-042_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.026 V
+I: I(Va:p) = 58.98 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.5 %)      1 (63.1 %)      2 (100.0 %)     3 (48.9 %)
+        Other   
+Initial condition solution time: CPU = 581 us, elapsed = 581.98 us.
+Intrinsic tran analysis time:    CPU = 13.386 ms, elapsed = 37.2701 ms.
+Total time required for tran analysis `FallTime-042_FallTime': CPU = 15.136 ms, elapsed = 39.0201 ms.
+Time accumulated: CPU = 1.2574 s, elapsed = 6.25652 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    17 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-043_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 590 us, elapsed = 590.086 us.
+
+Notice from spectre during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-043_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.61338 ns during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.67338 ns during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.73338 ns during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.79338 ns during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.85338 ns during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             79
+
+Notice from spectre during transient analysis `FallTime-043_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.021 V
+I: I(Va:p) = 31.19 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.0 %)      1 (63.1 %)      2 (100.0 %)     3 (49.8 %)
+        Other   
+Initial condition solution time: CPU = 635 us, elapsed = 636.816 us.
+Intrinsic tran analysis time:    CPU = 14.006 ms, elapsed = 40.2009 ms.
+Total time required for tran analysis `FallTime-043_FallTime': CPU = 15.857 ms, elapsed = 42.0499 ms.
+Time accumulated: CPU = 1.28075 s, elapsed = 6.37601 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-044_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 554 us, elapsed = 553.846 us.
+
+Notice from spectre during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-044_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.1573 ns during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.1625 ns during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.62146 ns during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.68146 ns during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.74146 ns during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             79
+
+Notice from spectre during transient analysis `FallTime-044_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.016 V
+I: I(Va:p) = 20.35 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.6 %)      1 (63.7 %)      2 (100.0 %)     3 (49.8 %)
+        Other   
+Initial condition solution time: CPU = 608 us, elapsed = 613.928 us.
+Intrinsic tran analysis time:    CPU = 13.859 ms, elapsed = 38.461 ms.
+Total time required for tran analysis `FallTime-044_FallTime': CPU = 15.732 ms, elapsed = 40.4651 ms.
+Time accumulated: CPU = 1.30393 s, elapsed = 6.49118 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    21 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-045_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 564 us, elapsed = 564.098 us.
+
+Notice from spectre during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-045_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.24334 ns during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.25125 ns during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.26447 ns during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.28469 ns during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.3125 ns during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             78
+
+Notice from spectre during transient analysis `FallTime-045_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.009 V
+I: I(Va:p) = 12.88 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.4 %)      1 (64.4 %)      2 (100.0 %)     3 (49.2 %)
+        Other   
+Initial condition solution time: CPU = 607 us, elapsed = 612.974 us.
+Intrinsic tran analysis time:    CPU = 12.316 ms, elapsed = 35.5101 ms.
+Total time required for tran analysis `FallTime-045_FallTime': CPU = 14.335 ms, elapsed = 37.6608 ms.
+Time accumulated: CPU = 1.32618 s, elapsed = 6.60585 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-046_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 577 us, elapsed = 579.119 us.
+
+Notice from spectre during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-046_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.08471 ns during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.14471 ns during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3.
+
+Notice from spectre at time = 2.20471 ns during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3...
+
+Notice from spectre at time = 2.26471 ns during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3.....
+
+Notice from spectre at time = 2.32471 ns during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `FallTime-046_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.006 V
+I: I(Va:p) = 9.663 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.3 %)      1 (65.1 %)      2 (100.0 %)     3 (48.9 %)
+        Other   
+Initial condition solution time: CPU = 631 us, elapsed = 633.001 us.
+Intrinsic tran analysis time:    CPU = 13.362 ms, elapsed = 40.5869 ms.
+Total time required for tran analysis `FallTime-046_FallTime': CPU = 15.244 ms, elapsed = 42.469 ms.
+Time accumulated: CPU = 1.34877 s, elapsed = 6.72685 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    12 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-047_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 565 us, elapsed = 566.006 us.
+
+Notice from spectre during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-047_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.64205 ns during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.70205 ns during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2........1
+
+Notice from spectre at time = 2.76205 ns during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2........1..
+
+Notice from spectre at time = 2.82205 ns during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2........1....
+
+Notice from spectre at time = 2.88205 ns during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             69
+
+Notice from spectre during transient analysis `FallTime-047_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.004 V
+I: I(Va:p) = 5.613 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.5 %)      1 (65.7 %)      2 (100.0 %)     3 (48.6 %)
+        Other   
+Initial condition solution time: CPU = 609 us, elapsed = 615.12 us.
+Intrinsic tran analysis time:    CPU = 13.113 ms, elapsed = 37.0598 ms.
+Total time required for tran analysis `FallTime-047_FallTime': CPU = 14.992 ms, elapsed = 39.0699 ms.
+Time accumulated: CPU = 1.3713 s, elapsed = 6.84848 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    2 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `FallTime-048_FallTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 552 us, elapsed = 553.131 us.
+
+Notice from spectre during transient analysis `FallTime-048_FallTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/FallTime-048_FallTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.48609 ns during transient analysis `FallTime-048_FallTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             64
+
+Notice from spectre during transient analysis `FallTime-048_FallTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.002 V
+I: I(Vd:p) = 3.466 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.6 %)      1 (66.2 %)      2 (100.0 %)     3 (48.4 %)
+        Other   
+Initial condition solution time: CPU = 596 us, elapsed = 597.954 us.
+Intrinsic tran analysis time:    CPU = 9.851 ms, elapsed = 33.1161 ms.
+Total time required for tran analysis `FallTime-048_FallTime': CPU = 11.658 ms, elapsed = 34.924 ms.
+Time accumulated: CPU = 1.3904 s, elapsed = 6.96102 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Aggregate audit (12:38:16 PM, Mon Jan 13, 2020):
+Time used: CPU = 1.39 s, elapsed = 7.01 s, util. = 19.9%.
+Time spent in licensing: elapsed = 22.8 ms.
+Peak memory used = 65.5 Mbytes.
+Simulation started at: 12:38:09 PM, Mon Jan 13, 2020, ended at: 12:38:16 PM, Mon Jan 13, 2020, with elapsed time (wall clock): 7.01 s.
+spectre completes with 0 errors, 3 warnings, and 383 notices.

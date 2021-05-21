@@ -1,0 +1,9 @@
+*MDL code
+
+alias measurement Capacitancia {
+	run tran (start=1n, stop = 4n)
+	export real Cap = ((I(Va:p) @1.16n) / (deriv(sig=V(a)) @ 1.16n))
+}
+
+run Capacitancia
+

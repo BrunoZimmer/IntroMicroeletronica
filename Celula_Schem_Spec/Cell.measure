@@ -1,0 +1,33 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  11:21:28 AM, Wed Feb 12, 2020
+design             :  *OR
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  RiseTime
+Analysis Type      :  tran
+F_PropNand      = 3.40913e-11 
+InvRise         = 1.45e-11 
+NandFall        = 3.6031e-11 
+OrRise          = 3.56002e-11 
+R_PropInv       = 1.96501e-11 
+R_PropOr        = 6.48631e-11 
+
+R_Prop_Cell     = 1.18604e-10 
+
+
+Measurement Name   :  FallTime
+Analysis Type      :  tran
+F_PropInv       = 1.61306e-11 
+F_PropOr        = 1.03105e-10 
+
+F_Prop_Cell     = 1.48526e-10
+ 
+InvFall         = 1.02303e-11 
+NandRise        = 2.74484e-11 
+OrFall          = 4.5367e-11 
+R_PropNand      = 2.92905e-11 
+
+

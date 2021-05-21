@@ -1,0 +1,18 @@
+ampa de entrada: 250ps
+Capacitância de saída: 7.6fF
+
+Inversor:
+Rise -  1.24702e-10
+Fall -  1.31969e-10
+
+Nand:
+Rise - 1.12048e-10  
+Fall - 1.27195e-10 
+
+Or:
+Rise - 1.59739e-10  
+Fall - 1.99217e-10  
+
+Xnor:
+Rise - 1.41822e-10
+Fall - 1.30624e-10

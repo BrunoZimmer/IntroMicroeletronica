@@ -1,0 +1,200 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 17843
+Memory  available: 457.9041 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3312.1 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 63.0 %, 59.5 %, 58.5 %
+
+
+Simulating `INV.scs' on itacolomi.lapsi at 10:15:36 AM, Tue Jan 14, 2020 (process id: 17843).
+Current working directory: /home/brunozimmer/Documentos/Capacitancia Celulas/Inv/MDL_Capacitancia_Med
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        Capac_Med_Cinc.mdl INV.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Capacitancia Celulas/Inv/MDL_Capacitancia_Med/INV.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Capacitancia Celulas/Inv/MDL_Capacitancia_Med/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Capacitancia Celulas/Inv/MDL_Capacitancia_Med/INV.spi
+Time for NDB Parsing: CPU = 210.817 ms, elapsed = 233.014 ms.
+Time accumulated: CPU = 229.833 ms, elapsed = 233.022 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 18.101 ms, elapsed = 18.229 ms.
+Time accumulated: CPU = 248.144 ms, elapsed = 251.656 ms.
+Peak resident memory used = 59.7 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-2468): A MDL control file 'Capac_Med_Cinc.mdl' is specified.  All .measure, .print and .probe statements in netlist 'INV.scs' are ignored.
+
+
+
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .print not found, ignoring
+
+Time for EDB Visiting: CPU = 844 us, elapsed = 912.905 us.
+Time accumulated: CPU = 249.147 ms, elapsed = 252.749 ms.
+Peak resident memory used = 60.3 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 4
+              bsim4 2     
+          capacitor 1     
+           resistor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 1     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.143 ms, elapsed = 38.981 ms.
+Time accumulated: CPU = 251.416 ms, elapsed = 291.876 ms.
+Peak resident memory used = 61.7 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+********************************************************
+Transient Analysis `Capacitancia': time = (1 ns -> 4 ns)
+********************************************************
+
+Notice from spectre during IC analysis, during transient analysis `Capacitancia', during task `MDLControl'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 624 us, elapsed = 624.895 us.
+
+Notice from spectre during transient analysis `Capacitancia', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file INV.raw/Capacitancia.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 4 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   4       (voltage)
+
+........9........
+
+Notice from spectre at time = 1.64086 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8.
+
+Notice from spectre at time = 1.70086 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8...
+
+Notice from spectre at time = 1.76086 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8.....
+
+Notice from spectre at time = 1.82086 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8.......
+
+Notice from spectre at time = 1.88086 ns during transient analysis `Capacitancia', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             78
+
+Notice from spectre during transient analysis `Capacitancia', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1.015 V
+I: I(Va:p) = 10.72 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 60 ps, default 80 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (55.2 %)      3 (62.1 %)
+        Other   
+Initial condition solution time: CPU = 673 us, elapsed = 674.963 us.
+Intrinsic tran analysis time:    CPU = 10.114 ms, elapsed = 31.759 ms.
+Total time required for tran analysis `Capacitancia': CPU = 12.966 ms, elapsed = 34.611 ms.
+Time accumulated: CPU = 270.097 ms, elapsed = 336.536 ms.
+Peak resident memory used = 64.3 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    36 notices suppressed.
+
+
+Aggregate audit (10:15:36 AM, Tue Jan 14, 2020):
+Time used: CPU = 273 ms, elapsed = 375 ms, util. = 72.8%.
+Time spent in licensing: elapsed = 24.4 ms, percentage of total = 6.49%.
+Peak memory used = 64.9 Mbytes.
+Simulation started at: 10:15:36 AM, Tue Jan 14, 2020, ended at: 10:15:36 AM, Tue Jan 14, 2020, with elapsed time (wall clock): 375 ms.
+spectre completes with 0 errors, 2 warnings, and 9 notices.

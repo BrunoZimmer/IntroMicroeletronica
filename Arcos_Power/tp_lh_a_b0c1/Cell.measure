@@ -1,0 +1,21 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  10:39:34 AM, Mon Mar 2, 2020
+design             :  *OR
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Power
+Analysis Type      :  tran
+Power           = 6.80914e-15 
+
+
+Measurement Name   :  PropTime
+Analysis Type      :  tran
+F_PropNand      = 3.40994e-11 
+R_PropInv       = 1.9656e-11 
+R_PropOr        = 6.49156e-11 
+R_Prop_Cell     = 1.18671e-10 
+
+

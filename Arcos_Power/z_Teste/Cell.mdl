@@ -1,0 +1,11 @@
+*MDL code
+
+alias measurement Power{
+	run tran (stop = 3n)
+	real charge = integ(sig=I(vdd), from=0n, to=3n )
+	export real Power = charge*V(vdd)
+}
+ 
+run Power
+
+

@@ -1,0 +1,22 @@
+//MDL code
+
+
+alias measurement PropTime {
+	run tran (stop = 3n, step = 100p)
+	export real F_PropNand= deltax(sig1=V(in), sig2=V(out2),thresh1=0.5, thresh2=0.5)
+	export real R_PropInv= deltax(sig1=V(out2), sig2=V(out),thresh1=0.5, thresh2=0.5)
+
+	export real R_Prop_Cell= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)
+}
+
+
+
+alias measurement Power{
+	run tran (stop = 3n)
+	//Operacao em 1 GHz
+	real charge = integ(sig=I(vdd), from=1n, to=2n )
+	export real Power = abs(charge*V(vdd))
+}
+run Powerrun PropTime
+
+

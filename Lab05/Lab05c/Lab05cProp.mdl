@@ -1,0 +1,22 @@
+//MDL distance
+
+alias measurement PropCelDown {
+	run tran (start=1n, stop = 3n)
+	export real TempInv= deltax(sig1=V(in), sig2=V(out1),thresh1=0.5, thresh2=0.5)	
+	export real TempNand= deltax(sig1=V(out1), sig2=V(out2),thresh1=0.5, thresh2=0.5)
+	export real TempXnor= deltax(sig1=V(out2), sig2=V(out3),thresh1=0.5, thresh2=0.5)
+	export real TempOr= deltax(sig1=V(out3), sig2=V(out),thresh1=0.5, thresh2=0.5)
+	export real TempRede= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)
+}
+
+alias measurement PropCelUp {
+	run tran (start=3n, stop = 6n)
+	export real TempInv= deltax(sig1=V(in), sig2=V(out1),thresh1=0.5, thresh2=0.5)	
+	export real TempNand= deltax(sig1=V(out1), sig2=V(out2),thresh1=0.5, thresh2=0.5)
+	export real TempXnor= deltax(sig1=V(out2), sig2=V(out3),thresh1=0.5, thresh2=0.5)
+	export real TempOr= deltax(sig1=V(out3), sig2=V(out),thresh1=0.5, thresh2=0.5)
+	export real TempRede= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)
+}
+
+run PropCelDown
+run PropCelUp

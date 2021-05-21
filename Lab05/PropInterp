@@ -1,0 +1,18 @@
+Measurement Name   :  PropCelDown
+Analysis Type      :  tran
+TempInv         = 
+TempNand        =  
+TempXnor        =  
+TempOr          =  
+
+TempRede        = 
+
+
+Measurement Name   :  PropCelUp
+Analysis Type      :  tran
+TempInv         =  
+TempNand        = 
+TempXnor        =  
+TempOr          =  
+
+TempRede        =  

@@ -1,0 +1,265 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 22101
+Memory  available: 1.7121 GB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+        Socket: Processors [Frequency]
+        0:       0 [3202.0],  1 [3294.1],  2 [3202.4],  3 [3300.6]
+        
+System load averages (1min, 5min, 15min) : 15.0 %, 9.2 %, 7.0 %
+
+
+Simulating `Cell.scs' on itacolomi.lapsi at 10:39:34 AM, Mon Mar 2, 2020 (process id: 22101).
+Current working directory: /home/brunozimmer/Documentos/Arcos_Power/tp_lh_a_b0c1
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl Cell.mdl  \
+        Cell.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Arcos_Power/tp_lh_a_b0c1/Cell.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Arcos_Power/tp_lh_a_b0c1/OR2.spi
+Reading file:  /home/brunozimmer/Documentos/Arcos_Power/tp_lh_a_b0c1/INV.spi
+Reading file:  /home/brunozimmer/Documentos/Arcos_Power/tp_lh_a_b0c1/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Arcos_Power/tp_lh_a_b0c1/NAND2.spi
+Time for NDB Parsing: CPU = 185.856 ms, elapsed = 196.16 ms.
+Time accumulated: CPU = 204.175 ms, elapsed = 196.168 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 17.014 ms, elapsed = 17.066 ms.
+Time accumulated: CPU = 221.335 ms, elapsed = 213.396 ms.
+Peak resident memory used = 59.7 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-2468): A MDL control file 'Cell.mdl' is specified.  All .measure, .print and .probe statements in netlist 'Cell.scs' are ignored.
+
+
+
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .measure charge not found, ignoring
+
+Time for EDB Visiting: CPU = 986 us, elapsed = 1.01304 ms.
+Time accumulated: CPU = 222.483 ms, elapsed = 214.583 ms.
+Peak resident memory used = 60.4 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 11
+              bsim4 16    
+          capacitor 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 1     
+               save 0     
+
+Time for parsing: CPU = 2.304 ms, elapsed = 36.1381 ms.
+Time accumulated: CPU = 224.922 ms, elapsed = 250.871 ms.
+Peak resident memory used = 61.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+************************************************
+Transient Analysis `Power': time = (0 s -> 3 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `Power', during task `MDLControl'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.246 ms, elapsed = 1.26719 ms.
+
+Notice from spectre during transient analysis `Power', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/Power.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   11      (voltage)
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36639 ns during transient analysis `Power', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42639 ns during transient analysis `Power', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.48639 ns during transient analysis `Power', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.54639 ns during transient analysis `Power', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.60639 ns during transient analysis `Power', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             102
+
+Notice from spectre during transient analysis `Power', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.M_i_1:int_g) = 1.078 V
+I: I(Vdd:p) = 98.56 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (20.0 %)      1 (76.9 %)      2 (26.9 %)      3 (7.7 %)
+        Other   
+Initial condition solution time: CPU = 1.301 ms, elapsed = 1.33014 ms.
+Intrinsic tran analysis time:    CPU = 25.228 ms, elapsed = 46.237 ms.
+Total time required for tran analysis `Power': CPU = 28.043 ms, elapsed = 49.1951 ms.
+Time accumulated: CPU = 258.074 ms, elapsed = 305.219 ms.
+Peak resident memory used = 64.3 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    24 notices suppressed.
+
+
+***************************************************
+Transient Analysis `PropTime': time = (0 s -> 3 ns)
+***************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PropTime', during task `MDLControl'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 1.037 ms, elapsed = 1.05596 ms.
+
+Notice from spectre during transient analysis `PropTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PropTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 100 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   11      (voltage)
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             99
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out2) = 1.081 V
+I: I(Vdd:p) = 98.75 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (18.8 %)      1 (69.7 %)      2 (23.5 %)      3 (11.8 %)
+        Other   
+Initial condition solution time: CPU = 1.079 ms, elapsed = 1.10507 ms.
+Intrinsic tran analysis time:    CPU = 21.226 ms, elapsed = 43.2501 ms.
+Total time required for tran analysis `PropTime': CPU = 23.608 ms, elapsed = 45.7692 ms.
+Time accumulated: CPU = 287.024 ms, elapsed = 376.242 ms.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Aggregate audit (10:39:34 AM, Mon Mar 2, 2020):
+Time used: CPU = 290 ms, elapsed = 435 ms, util. = 66.8%.
+Time spent in licensing: elapsed = 25.6 ms, percentage of total = 5.9%.
+Peak memory used = 64.9 Mbytes.
+Simulation started at: 10:39:34 AM, Mon Mar 2, 2020, ended at: 10:39:34 AM, Mon Mar 2, 2020, with elapsed time (wall clock): 435 ms.
+spectre completes with 0 errors, 2 warnings, and 11 notices.

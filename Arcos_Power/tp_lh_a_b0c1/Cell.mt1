@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*OR'
+R_PropOr F_PropNand R_PropInv R_Prop_Cell alter# 
+6.49156e-11 3.40994e-11 1.9656e-11 1.18671e-10 2 
+

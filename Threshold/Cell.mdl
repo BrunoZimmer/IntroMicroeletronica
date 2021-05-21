@@ -1,0 +1,9 @@
+*MDL code
+
+alias measurement VThreshold {
+	run dc (param=vdd, start = 0, stop = 1, step = 0.01)
+	export real Max_Der = max(deriv(I(Vs))) 
+	export real Max_Ten = argmax(deriv(I(Vs)))
+	real Linear =  sample(sig=V(1), from 1  )
+}
+run VThreshold

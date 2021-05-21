@@ -1,0 +1,17 @@
+*Threshold
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+
+Vg Gate 0 'vdd'
+Vs Source 0 0
+Vd Drain 0 1
+Vb Bulk 0 0
+
+Mi Drain Gate Source Bulk NMOS_VTL W=0.630000U L=0.050000U
+
+.param vdd=1 
+.DC Vdd start=0.0 stop=1 step=0.01 
+
+.option rawfmt="psfbin"

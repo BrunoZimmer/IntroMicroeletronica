@@ -1,0 +1,114 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 28740
+Memory  available: 745.1361 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+        Socket: Processors [Frequency]
+        0:       0 [2639.1],  1 [2645.9],  2 [2590.3],  3 [2627.9]
+        
+System load averages (1min, 5min, 15min) : 4.0 %, 5.2 %, 6.2 %
+
+
+Simulating `Cell.scs' on itacolomi.lapsi at 11:40:04 AM, Mon Mar 2, 2020 (process id: 28740).
+Current working directory: /home/brunozimmer/Documentos/Threshold
+Command line:
+    /tools/cadence/SPECTRE161/tools/bin/spectre -64 Cell.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Threshold/Cell.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Threshold/45nm_LP.pm
+Time for NDB Parsing: CPU = 135.172 ms, elapsed = 149.712 ms.
+Time accumulated: CPU = 160.436 ms, elapsed = 149.72 ms.
+Peak resident memory used = 42.8 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 16.1 ms, elapsed = 15.9681 ms.
+Time accumulated: CPU = 176.672 ms, elapsed = 165.839 ms.
+Peak resident memory used = 49.6 Mbytes.
+
+
+Time for EDB Visiting: CPU = 486 us, elapsed = 490.904 us.
+Time accumulated: CPU = 177.293 ms, elapsed = 166.484 ms.
+Peak resident memory used = 50.1 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 4
+              bsim4 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+                 dc 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.235 ms, elapsed = 34.1029 ms.
+Time accumulated: CPU = 179.636 ms, elapsed = 200.708 ms.
+Peak resident memory used = 51.4 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+**************************************
+DC Analysis `srcSweep': Vdd = (0 -> 1)
+**************************************
+
+Notice from spectre during DC analysis `srcSweep'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/srcSweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+........9........8........7........6........5........4........3........2........1........0
+
+Maximum value achieved for any signal of each quantity: 
+V: V(Drain) = 1 V
+I: I(Vs:p) = 227.7 uA
+DC simulation time: CPU = 10.387 ms, elapsed = 25.0428 ms.
+
+Notice from spectre at Vdd = 1 during DC analysis `srcSweep'.
+    The value of parameter 'Vdd' has been reset to the original value 1.
+
+Total time required for dc analysis `srcSweep': CPU = 10.436 ms, elapsed = 25.094 ms.
+Time accumulated: CPU = 194.086 ms, elapsed = 229.876 ms.
+Peak resident memory used = 52.8 Mbytes.
+
+
+Aggregate audit (11:40:05 AM, Mon Mar 2, 2020):
+Time used: CPU = 196 ms, elapsed = 251 ms, util. = 78.1%.
+Time spent in licensing: elapsed = 23 ms, percentage of total = 9.18%.
+Peak memory used = 53.2 Mbytes.
+Simulation started at: 11:40:04 AM, Mon Mar 2, 2020, ended at: 11:40:05 AM, Mon Mar 2, 2020, with elapsed time (wall clock): 251 ms.
+spectre completes with 0 errors, 0 warnings, and 2 notices.

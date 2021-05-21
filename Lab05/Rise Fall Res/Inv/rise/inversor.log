@@ -1,0 +1,4944 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 28587
+Memory  available: 842.9076 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3323.5 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 61.0 %, 59.8 %, 58.2 %
+
+
+Simulating `inversor.scs' on itacolomi.lapsi at 12:30:47 PM, Mon Jan 13, 2020 (process id: 28587).
+Current working directory: /home/brunozimmer/Documentos/Lab05a/Inv/rise
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        deltaxrise.mdl inversor.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Inv/rise/inversor.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Inv/rise/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Inv/rise/INV.spi
+Time for NDB Parsing: CPU = 188.839 ms, elapsed = 232.546 ms.
+Time accumulated: CPU = 207.599 ms, elapsed = 232.554 ms.
+Peak resident memory used = 52 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 18.9 ms, elapsed = 22.434 ms.
+Time accumulated: CPU = 226.728 ms, elapsed = 255.815 ms.
+Peak resident memory used = 58.8 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-2468): A MDL control file 'deltaxrise.mdl' is specified.  All .measure, .print and .probe statements in netlist 'inversor.scs' are ignored.
+
+
+
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .print not found, ignoring
+
+Time for EDB Visiting: CPU = 790 us, elapsed = 820.16 us.
+Time accumulated: CPU = 227.679 ms, elapsed = 256.808 ms.
+Peak resident memory used = 59.4 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+              bsim4 2     
+          capacitor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 1     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.459 ms, elapsed = 56.2539 ms.
+Time accumulated: CPU = 230.259 ms, elapsed = 313.201 ms.
+Peak resident memory used = 60.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*******************************************************************
+Transient Analysis `DifTempo-000_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 516 us, elapsed = 515.938 us.
+
+Notice from spectre during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-000_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+....
+
+Notice from spectre at time = 1.13078 ns during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+.....
+
+Notice from spectre at time = 1.17878 ns during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+.......
+
+Notice from spectre at time = 1.22678 ns during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9
+
+Notice from spectre at time = 1.27478 ns during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.
+
+Notice from spectre at time = 1.32278 ns during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `DifTempo-000_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 80.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (70.7 %)      1 (38.5 %)      2 (95.0 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 585 us, elapsed = 587.225 us.
+Intrinsic tran analysis time:    CPU = 8.457 ms, elapsed = 31.3978 ms.
+Total time required for tran analysis `DifTempo-000_DifTempo': CPU = 10.581 ms, elapsed = 33.5219 ms.
+Time accumulated: CPU = 267.588 ms, elapsed = 451.629 ms.
+Peak resident memory used = 64.2 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    44 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-001_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 260 us, elapsed = 260.115 us.
+
+Notice from spectre during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-001_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9
+
+Notice from spectre at time = 1.29784 ns during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9..
+
+Notice from spectre at time = 1.34584 ns during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9....
+
+Notice from spectre at time = 1.39384 ns during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9......
+
+Notice from spectre at time = 1.44184 ns during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........
+
+Notice from spectre at time = 1.48984 ns during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             82
+
+Notice from spectre during transient analysis `DifTempo-001_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 50.17 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (67.3 %)      1 (39.2 %)      2 (96.1 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 318 us, elapsed = 324.965 us.
+Intrinsic tran analysis time:    CPU = 8.454 ms, elapsed = 34.627 ms.
+Total time required for tran analysis `DifTempo-001_DifTempo': CPU = 10.013 ms, elapsed = 36.3469 ms.
+Time accumulated: CPU = 285.267 ms, elapsed = 563.101 ms.
+Peak resident memory used = 64.3 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    40 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-002_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 248 us, elapsed = 247.955 us.
+
+Notice from spectre during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-002_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9......
+
+Notice from spectre at time = 1.44634 ns during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........
+
+Notice from spectre at time = 1.49434 ns during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.
+
+Notice from spectre at time = 1.54234 ns during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8..
+
+Notice from spectre at time = 1.59034 ns during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8....
+
+Notice from spectre at time = 1.63834 ns during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `DifTempo-002_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 34.56 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.7 %)      1 (37.1 %)      2 (96.8 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 286 us, elapsed = 288.01 us.
+Intrinsic tran analysis time:    CPU = 8.1 ms, elapsed = 31.4469 ms.
+Total time required for tran analysis `DifTempo-002_DifTempo': CPU = 9.518 ms, elapsed = 32.8629 ms.
+Time accumulated: CPU = 302.337 ms, elapsed = 676.525 ms.
+Peak resident memory used = 64.3 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    37 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-003_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 253 us, elapsed = 252.962 us.
+
+Notice from spectre during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-003_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9...
+
+Notice from spectre at time = 1.3125 ns during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........
+
+Notice from spectre at time = 1.50573 ns during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.
+
+Notice from spectre at time = 1.55373 ns during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8...
+
+Notice from spectre at time = 1.60173 ns during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.....
+
+Notice from spectre at time = 1.64973 ns during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `DifTempo-003_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 20.65 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.8 %)      1 (38.0 %)      2 (97.2 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 300 us, elapsed = 302.076 us.
+Intrinsic tran analysis time:    CPU = 7.698 ms, elapsed = 22.5248 ms.
+Total time required for tran analysis `DifTempo-003_DifTempo': CPU = 9.13 ms, elapsed = 23.952 ms.
+Time accumulated: CPU = 318.767 ms, elapsed = 775.72 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    37 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-004_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 261 us, elapsed = 260.115 us.
+
+Notice from spectre during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-004_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6......
+
+Notice from spectre at time = 2.15721 ns during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 2.20521 ns during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 2.25321 ns during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 2.30121 ns during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 2.34921 ns during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             69
+
+Notice from spectre during transient analysis `DifTempo-004_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 12.18 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.5 %)      1 (38.8 %)      2 (97.5 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 309 us, elapsed = 309.944 us.
+Intrinsic tran analysis time:    CPU = 8.015 ms, elapsed = 23.5021 ms.
+Total time required for tran analysis `DifTempo-004_DifTempo': CPU = 9.435 ms, elapsed = 24.9202 ms.
+Time accumulated: CPU = 335.605 ms, elapsed = 860.548 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-005_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 272 us, elapsed = 272.036 us.
+
+Notice from spectre during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-005_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+.......
+
+Notice from spectre at time = 1.2244 ns during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........
+
+Notice from spectre at time = 1.2724 ns during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.96458 ns during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 2.01258 ns during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 2.06058 ns during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `DifTempo-005_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 7.06 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.1 %)      1 (38.2 %)      2 (97.8 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 313 us, elapsed = 314.951 us.
+Intrinsic tran analysis time:    CPU = 7.743 ms, elapsed = 23.3591 ms.
+Total time required for tran analysis `DifTempo-005_DifTempo': CPU = 9.116 ms, elapsed = 24.7321 ms.
+Time accumulated: CPU = 352.028 ms, elapsed = 943.237 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-006_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 255 us, elapsed = 257.015 us.
+
+Notice from spectre during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-006_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+.......
+
+Notice from spectre at time = 1.24154 ns during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9
+
+Notice from spectre at time = 1.28954 ns during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9..
+
+Notice from spectre at time = 1.33754 ns during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9....
+
+Notice from spectre at time = 1.38554 ns during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.....
+
+Notice from spectre at time = 1.43354 ns during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             61
+
+Notice from spectre during transient analysis `DifTempo-006_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 4.042 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (48.4 %)      1 (39.6 %)      2 (97.9 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 305 us, elapsed = 311.852 us.
+Intrinsic tran analysis time:    CPU = 6.753 ms, elapsed = 22.1188 ms.
+Total time required for tran analysis `DifTempo-006_DifTempo': CPU = 8.206 ms, elapsed = 23.6709 ms.
+Time accumulated: CPU = 367.311 ms, elapsed = 1.02581 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    12 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-007_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 281 us, elapsed = 281.096 us.
+
+Notice from spectre during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-007_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+....
+
+Notice from spectre at time = 1.12891 ns during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+.....
+
+Notice from spectre at time = 1.17691 ns during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+.......
+
+Notice from spectre at time = 1.22491 ns during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........
+
+Notice from spectre at time = 1.27291 ns during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.
+
+Notice from spectre at time = 1.32091 ns during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `DifTempo-007_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 91.29 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (48.1 %)      1 (39.4 %)      2 (98.2 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 323 us, elapsed = 324.011 us.
+Intrinsic tran analysis time:    CPU = 8.417 ms, elapsed = 34.405 ms.
+Total time required for tran analysis `DifTempo-007_DifTempo': CPU = 9.838 ms, elapsed = 35.826 ms.
+Time accumulated: CPU = 385.752 ms, elapsed = 1.15443 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    44 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-008_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 255 us, elapsed = 254.869 us.
+
+Notice from spectre during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-008_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9
+
+Notice from spectre at time = 1.282 ns during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9..
+
+Notice from spectre at time = 1.33 ns during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9...
+
+Notice from spectre at time = 1.378 ns during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.....
+
+Notice from spectre at time = 1.426 ns during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.......
+
+Notice from spectre at time = 1.474 ns during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `DifTempo-008_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 56.56 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (47.0 %)      1 (39.8 %)      2 (98.3 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 314 us, elapsed = 319.958 us.
+Intrinsic tran analysis time:    CPU = 8.514 ms, elapsed = 24.4448 ms.
+Total time required for tran analysis `DifTempo-008_DifTempo': CPU = 10.023 ms, elapsed = 26.1121 ms.
+Time accumulated: CPU = 403.115 ms, elapsed = 1.23647 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    41 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-009_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 294 us, elapsed = 1.46794 ms.
+
+Notice from spectre during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-009_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9....
+
+Notice from spectre at time = 1.3847 ns during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.....
+
+Notice from spectre at time = 1.4327 ns during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.......
+
+Notice from spectre at time = 1.4807 ns during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8
+
+Notice from spectre at time = 1.5287 ns during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8..
+
+Notice from spectre at time = 1.5767 ns during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             87
+
+Notice from spectre during transient analysis `DifTempo-009_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 39.62 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (46.8 %)      1 (39.4 %)      2 (98.4 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 357 us, elapsed = 1.53899 ms.
+Intrinsic tran analysis time:    CPU = 8.339 ms, elapsed = 30.0992 ms.
+Total time required for tran analysis `DifTempo-009_DifTempo': CPU = 10.107 ms, elapsed = 33.8998 ms.
+Time accumulated: CPU = 420.387 ms, elapsed = 1.32775 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-010_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 274 us, elapsed = 273.943 us.
+
+Notice from spectre during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-010_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9..
+
+Notice from spectre at time = 1.3125 ns during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8
+
+Notice from spectre at time = 1.53741 ns during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8..
+
+Notice from spectre at time = 1.58541 ns during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8....
+
+Notice from spectre at time = 1.63341 ns during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8......
+
+Notice from spectre at time = 1.68141 ns during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `DifTempo-010_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 24.02 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (45.9 %)      1 (40.0 %)      2 (98.5 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 316 us, elapsed = 315.905 us.
+Intrinsic tran analysis time:    CPU = 7.557 ms, elapsed = 22.3598 ms.
+Total time required for tran analysis `DifTempo-010_DifTempo': CPU = 8.961 ms, elapsed = 23.7579 ms.
+Time accumulated: CPU = 436.646 ms, elapsed = 1.40963 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    36 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-011_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 283 us, elapsed = 283.957 us.
+
+Notice from spectre during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-011_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8...
+
+Notice from spectre at time = 1.59375 ns during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.95571 ns during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 2.00371 ns during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 2.05171 ns during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 2.09971 ns during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `DifTempo-011_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 13.9 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (45.1 %)      1 (39.2 %)      2 (98.6 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 332 us, elapsed = 339.031 us.
+Intrinsic tran analysis time:    CPU = 8.367 ms, elapsed = 24.2169 ms.
+Total time required for tran analysis `DifTempo-011_DifTempo': CPU = 9.861 ms, elapsed = 25.9531 ms.
+Time accumulated: CPU = 453.626 ms, elapsed = 1.49487 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    28 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-012_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 264 us, elapsed = 265.121 us.
+
+Notice from spectre during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-012_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 2.00402 ns during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 2.05202 ns during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 2.10002 ns during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 2.1275 ns during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 2.51517 ns during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             65
+
+Notice from spectre during transient analysis `DifTempo-012_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 8.39 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (44.4 %)      1 (40.1 %)      2 (98.7 %)      3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 302 us, elapsed = 306.129 us.
+Intrinsic tran analysis time:    CPU = 8.201 ms, elapsed = 23.839 ms.
+Total time required for tran analysis `DifTempo-012_DifTempo': CPU = 9.592 ms, elapsed = 25.233 ms.
+Time accumulated: CPU = 470.531 ms, elapsed = 1.5779 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-013_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 260 us, elapsed = 260.115 us.
+
+Notice from spectre during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-013_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+.......
+
+Notice from spectre at time = 1.24138 ns during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9
+
+Notice from spectre at time = 1.28938 ns during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9..
+
+Notice from spectre at time = 1.33738 ns during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9....
+
+Notice from spectre at time = 1.38538 ns during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.....
+
+Notice from spectre at time = 1.43338 ns during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             63
+
+Notice from spectre during transient analysis `DifTempo-013_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 5.014 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (43.5 %)      1 (41.6 %)      2 (98.8 %)      3 (98.8 %)
+        Other   
+Initial condition solution time: CPU = 302 us, elapsed = 303.03 us.
+Intrinsic tran analysis time:    CPU = 6.707 ms, elapsed = 22.1019 ms.
+Total time required for tran analysis `DifTempo-013_DifTempo': CPU = 8.283 ms, elapsed = 23.6778 ms.
+Time accumulated: CPU = 485.85 ms, elapsed = 1.66768 s.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    13 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-014_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 264 us, elapsed = 263.929 us.
+
+Notice from spectre during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-014_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+......
+
+Notice from spectre at time = 1.21329 ns during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........
+
+Notice from spectre at time = 1.26129 ns during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.
+
+Notice from spectre at time = 1.30929 ns during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9...
+
+Notice from spectre at time = 1.35729 ns during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9....
+
+Notice from spectre at time = 1.40529 ns during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             81
+
+Notice from spectre during transient analysis `DifTempo-014_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 104.6 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (43.0 %)      1 (41.3 %)      2 (98.8 %)      3 (98.8 %)
+        Other   
+Initial condition solution time: CPU = 303 us, elapsed = 304.937 us.
+Intrinsic tran analysis time:    CPU = 7.759 ms, elapsed = 23.7341 ms.
+Total time required for tran analysis `DifTempo-014_DifTempo': CPU = 9.164 ms, elapsed = 25.14 ms.
+Time accumulated: CPU = 503.492 ms, elapsed = 1.78575 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    42 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-015_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 303 us, elapsed = 302.792 us.
+
+Notice from spectre during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-015_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9
+
+Notice from spectre at time = 1.29237 ns during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9..
+
+Notice from spectre at time = 1.34037 ns during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9....
+
+Notice from spectre at time = 1.38837 ns during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9......
+
+Notice from spectre at time = 1.43637 ns during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.......
+
+Notice from spectre at time = 1.48437 ns during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `DifTempo-015_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 69.73 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (42.3 %)      1 (41.8 %)      2 (98.9 %)      3 (98.9 %)
+        Other   
+Initial condition solution time: CPU = 360 us, elapsed = 411.987 us.
+Intrinsic tran analysis time:    CPU = 8.669 ms, elapsed = 39.0379 ms.
+Total time required for tran analysis `DifTempo-015_DifTempo': CPU = 10.431 ms, elapsed = 42.058 ms.
+Time accumulated: CPU = 521.167 ms, elapsed = 1.88635 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    40 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-016_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 257 us, elapsed = 257.015 us.
+
+Notice from spectre during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-016_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9....
+
+Notice from spectre at time = 1.3947 ns during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9......
+
+Notice from spectre at time = 1.4427 ns during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........
+
+Notice from spectre at time = 1.4907 ns during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8
+
+Notice from spectre at time = 1.5387 ns during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8..
+
+Notice from spectre at time = 1.5867 ns during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `DifTempo-016_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 48.57 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (44.8 %)      1 (42.7 %)      2 (99.0 %)      3 (96.9 %)
+        Other   
+Initial condition solution time: CPU = 306 us, elapsed = 360.966 us.
+Intrinsic tran analysis time:    CPU = 9.537 ms, elapsed = 35.5451 ms.
+Total time required for tran analysis `DifTempo-016_DifTempo': CPU = 11.4 ms, elapsed = 38.985 ms.
+Time accumulated: CPU = 539.547 ms, elapsed = 1.99146 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-017_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 265 us, elapsed = 265.121 us.
+
+Notice from spectre during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-017_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8..
+
+Notice from spectre at time = 1.5821 ns during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8....
+
+Notice from spectre at time = 1.6301 ns during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8......
+
+Notice from spectre at time = 1.6781 ns during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.......
+
+Notice from spectre at time = 1.7261 ns during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7
+
+Notice from spectre at time = 1.7741 ns during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `DifTempo-017_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 29.99 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (45.0 %)      1 (43.1 %)      2 (99.0 %)      3 (95.1 %)
+        Other   
+Initial condition solution time: CPU = 305 us, elapsed = 305.891 us.
+Intrinsic tran analysis time:    CPU = 8.009 ms, elapsed = 31.1639 ms.
+Total time required for tran analysis `DifTempo-017_DifTempo': CPU = 9.588 ms, elapsed = 32.7439 ms.
+Time accumulated: CPU = 556.284 ms, elapsed = 2.09384 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    34 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-018_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 250 us, elapsed = 250.101 us.
+
+Notice from spectre during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-018_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7...
+
+Notice from spectre at time = 1.83719 ns during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7....
+
+Notice from spectre at time = 1.88519 ns during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7......
+
+Notice from spectre at time = 1.93319 ns during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.98119 ns during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 2.02919 ns during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             75
+
+Notice from spectre during transient analysis `DifTempo-018_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 18.21 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (46.9 %)      1 (42.5 %)      2 (99.1 %)      3 (93.9 %)
+        Other   
+Initial condition solution time: CPU = 289 us, elapsed = 291.109 us.
+Intrinsic tran analysis time:    CPU = 8.452 ms, elapsed = 32.896 ms.
+Total time required for tran analysis `DifTempo-018_DifTempo': CPU = 9.839 ms, elapsed = 34.281 ms.
+Time accumulated: CPU = 573.494 ms, elapsed = 2.19717 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    29 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-019_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 256 us, elapsed = 256.062 us.
+
+Notice from spectre during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-019_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........
+
+Notice from spectre at time = 1.98806 ns during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 2.03606 ns during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 2.08406 ns during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 2.1275 ns during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 2.58146 ns during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             67
+
+Notice from spectre during transient analysis `DifTempo-019_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 10.99 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (49.5 %)      1 (42.2 %)      2 (99.1 %)      3 (90.6 %)
+        Other   
+Initial condition solution time: CPU = 303 us, elapsed = 334.024 us.
+Intrinsic tran analysis time:    CPU = 8.46 ms, elapsed = 33.0601 ms.
+Total time required for tran analysis `DifTempo-019_DifTempo': CPU = 9.923 ms, elapsed = 34.883 ms.
+Time accumulated: CPU = 591.033 ms, elapsed = 2.3043 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    18 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-020_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 273 us, elapsed = 274.181 us.
+
+Notice from spectre during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-020_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+.......
+
+Notice from spectre at time = 1.24103 ns during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9
+
+Notice from spectre at time = 1.28903 ns during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9..
+
+Notice from spectre at time = 1.33703 ns during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9....
+
+Notice from spectre at time = 1.38503 ns during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.....
+
+Notice from spectre at time = 1.43303 ns during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             63
+
+Notice from spectre during transient analysis `DifTempo-020_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 6.466 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.7 %)      1 (42.3 %)      2 (99.1 %)      3 (88.0 %)
+        Other   
+Initial condition solution time: CPU = 315 us, elapsed = 317.097 us.
+Intrinsic tran analysis time:    CPU = 6.814 ms, elapsed = 30.515 ms.
+Total time required for tran analysis `DifTempo-020_DifTempo': CPU = 8.374 ms, elapsed = 32.0771 ms.
+Time accumulated: CPU = 606.513 ms, elapsed = 2.40158 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    13 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-021_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 260 us, elapsed = 260.83 us.
+
+Notice from spectre during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-021_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+..
+
+Notice from spectre at time = 1.0512 ns during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+......
+
+Notice from spectre at time = 1.22053 ns during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........
+
+Notice from spectre at time = 1.26853 ns during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.
+
+Notice from spectre at time = 1.31653 ns during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9...
+
+Notice from spectre at time = 1.36453 ns during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `DifTempo-021_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 118.6 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.7 %)      1 (42.3 %)      2 (99.2 %)      3 (84.3 %)
+        Other   
+Initial condition solution time: CPU = 301 us, elapsed = 302.792 us.
+Intrinsic tran analysis time:    CPU = 7.942 ms, elapsed = 31.533 ms.
+Total time required for tran analysis `DifTempo-021_DifTempo': CPU = 9.498 ms, elapsed = 33.088 ms.
+Time accumulated: CPU = 624.971 ms, elapsed = 2.54495 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    43 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-022_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 269 us, elapsed = 268.936 us.
+
+Notice from spectre during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-022_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........
+
+Notice from spectre at time = 1.2564 ns during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.
+
+Notice from spectre at time = 1.3044 ns during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9..
+
+Notice from spectre at time = 1.3524 ns during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9....
+
+Notice from spectre at time = 1.4004 ns during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9......
+
+Notice from spectre at time = 1.4484 ns during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `DifTempo-022_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 96.23 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (56.4 %)      1 (42.6 %)      2 (99.2 %)      3 (82.8 %)
+        Other   
+Initial condition solution time: CPU = 310 us, elapsed = 313.044 us.
+Intrinsic tran analysis time:    CPU = 7.962 ms, elapsed = 31.0888 ms.
+Total time required for tran analysis `DifTempo-022_DifTempo': CPU = 9.458 ms, elapsed = 32.5811 ms.
+Time accumulated: CPU = 641.544 ms, elapsed = 2.64412 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    41 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-023_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 293 us, elapsed = 293.97 us.
+
+Notice from spectre during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-023_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9....
+
+Notice from spectre at time = 1.39564 ns during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9......
+
+Notice from spectre at time = 1.44364 ns during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........
+
+Notice from spectre at time = 1.49164 ns during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8
+
+Notice from spectre at time = 1.53964 ns during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8..
+
+Notice from spectre at time = 1.58764 ns during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             82
+
+Notice from spectre during transient analysis `DifTempo-023_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 68.72 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.1 %)      1 (42.9 %)      2 (99.3 %)      3 (80.5 %)
+        Other   
+Initial condition solution time: CPU = 345 us, elapsed = 346.899 us.
+Intrinsic tran analysis time:    CPU = 8.137 ms, elapsed = 31.744 ms.
+Total time required for tran analysis `DifTempo-023_DifTempo': CPU = 9.748 ms, elapsed = 33.4301 ms.
+Time accumulated: CPU = 658.944 ms, elapsed = 2.74567 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-024_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 264 us, elapsed = 264.168 us.
+
+Notice from spectre during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-024_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8.....
+
+Notice from spectre at time = 1.67245 ns during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.......
+
+Notice from spectre at time = 1.72045 ns during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7
+
+Notice from spectre at time = 1.76845 ns during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7..
+
+Notice from spectre at time = 1.81645 ns during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7....
+
+Notice from spectre at time = 1.86445 ns during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             78
+
+Notice from spectre during transient analysis `DifTempo-024_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 43.46 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.6 %)      1 (42.7 %)      2 (99.3 %)      3 (78.1 %)
+        Other   
+Initial condition solution time: CPU = 303 us, elapsed = 303.984 us.
+Intrinsic tran analysis time:    CPU = 8.126 ms, elapsed = 31.651 ms.
+Total time required for tran analysis `DifTempo-024_DifTempo': CPU = 9.683 ms, elapsed = 33.21 ms.
+Time accumulated: CPU = 675.832 ms, elapsed = 2.85301 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    32 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-025_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 268 us, elapsed = 268.936 us.
+
+Notice from spectre during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-025_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7...
+
+Notice from spectre at time = 1.83678 ns during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7....
+
+Notice from spectre at time = 1.88478 ns during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7......
+
+Notice from spectre at time = 1.93278 ns during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.98078 ns during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 2.02878 ns during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `DifTempo-025_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 27.43 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (61.1 %)      1 (42.6 %)      2 (99.3 %)      3 (76.3 %)
+        Other   
+Initial condition solution time: CPU = 309 us, elapsed = 308.99 us.
+Intrinsic tran analysis time:    CPU = 8.023 ms, elapsed = 31.759 ms.
+Total time required for tran analysis `DifTempo-025_DifTempo': CPU = 9.48 ms, elapsed = 33.2179 ms.
+Time accumulated: CPU = 692.834 ms, elapsed = 2.96197 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    29 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-026_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 262 us, elapsed = 263.929 us.
+
+Notice from spectre during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-026_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6....
+
+Notice from spectre at time = 2.11948 ns during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 2.1275 ns during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 2.42053 ns during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 2.46853 ns during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 2.51653 ns during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             66
+
+Notice from spectre during transient analysis `DifTempo-026_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 17.06 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (62.5 %)      1 (42.0 %)      2 (99.3 %)      3 (75.5 %)
+        Other   
+Initial condition solution time: CPU = 315 us, elapsed = 365.019 us.
+Intrinsic tran analysis time:    CPU = 7.869 ms, elapsed = 29.0549 ms.
+Total time required for tran analysis `DifTempo-026_DifTempo': CPU = 9.664 ms, elapsed = 32.4061 ms.
+Time accumulated: CPU = 709.473 ms, elapsed = 3.06901 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-027_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 255 us, elapsed = 255.823 us.
+
+Notice from spectre during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-027_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........4........3.....
+
+Notice from spectre at time = 2.85928 ns during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3.......
+
+Notice from spectre at time = 2.90728 ns during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2
+
+Notice from spectre at time = 2.95528 ns during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2.
+
+Notice from spectre at time = 3.00328 ns during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 3.05128 ns during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             62
+
+Notice from spectre during transient analysis `DifTempo-027_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 10.16 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (63.9 %)      1 (42.6 %)      2 (99.4 %)      3 (74.6 %)
+        Other   
+Initial condition solution time: CPU = 294 us, elapsed = 295.877 us.
+Intrinsic tran analysis time:    CPU = 9.436 ms, elapsed = 35.681 ms.
+Total time required for tran analysis `DifTempo-027_DifTempo': CPU = 11.028 ms, elapsed = 37.271 ms.
+Time accumulated: CPU = 727.699 ms, elapsed = 3.18248 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-028_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 250 us, elapsed = 251.055 us.
+
+Notice from spectre during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-028_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9
+
+Notice from spectre at time = 1.28985 ns during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9..
+
+Notice from spectre at time = 1.33785 ns during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9....
+
+Notice from spectre at time = 1.38585 ns during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.....
+
+Notice from spectre at time = 1.43385 ns during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.......
+
+Notice from spectre at time = 1.48185 ns during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `DifTempo-028_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 127.3 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (65.7 %)      1 (42.2 %)      2 (99.4 %)      3 (72.1 %)
+        Other   
+Initial condition solution time: CPU = 301 us, elapsed = 307.798 us.
+Intrinsic tran analysis time:    CPU = 8.038 ms, elapsed = 31.7998 ms.
+Total time required for tran analysis `DifTempo-028_DifTempo': CPU = 9.542 ms, elapsed = 33.484 ms.
+Time accumulated: CPU = 746.406 ms, elapsed = 3.34579 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    40 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-029_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 258 us, elapsed = 260.115 us.
+
+Notice from spectre during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-029_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+...
+
+Notice from spectre at time = 1.08256 ns during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.08939 ns during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.0975 ns during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9......
+
+Notice from spectre at time = 1.44012 ns during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........
+
+Notice from spectre at time = 1.48812 ns during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `DifTempo-029_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 113.5 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (67.0 %)      1 (42.1 %)      2 (99.4 %)      3 (71.1 %)
+        Other   
+Initial condition solution time: CPU = 310 us, elapsed = 317.097 us.
+Intrinsic tran analysis time:    CPU = 9.11 ms, elapsed = 45.5341 ms.
+Total time required for tran analysis `DifTempo-029_DifTempo': CPU = 10.812 ms, elapsed = 47.406 ms.
+Time accumulated: CPU = 764.507 ms, elapsed = 3.46824 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    40 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-030_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 254 us, elapsed = 255.108 us.
+
+Notice from spectre during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-030_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9.....
+
+Notice from spectre at time = 1.43178 ns during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9.......
+
+Notice from spectre at time = 1.47978 ns during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8
+
+Notice from spectre at time = 1.52778 ns during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8..
+
+Notice from spectre at time = 1.57578 ns during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8....
+
+Notice from spectre at time = 1.62378 ns during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             79
+
+Notice from spectre during transient analysis `DifTempo-030_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 93.92 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (68.0 %)      1 (41.7 %)      2 (99.4 %)      3 (70.6 %)
+        Other   
+Initial condition solution time: CPU = 298 us, elapsed = 304.937 us.
+Intrinsic tran analysis time:    CPU = 8.043 ms, elapsed = 31.9932 ms.
+Total time required for tran analysis `DifTempo-030_DifTempo': CPU = 9.546 ms, elapsed = 33.6728 ms.
+Time accumulated: CPU = 781.688 ms, elapsed = 3.57997 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-031_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 248 us, elapsed = 248.909 us.
+
+Notice from spectre during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-031_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8...
+
+Notice from spectre at time = 1.61326 ns during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.....
+
+Notice from spectre at time = 1.66126 ns during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.......
+
+Notice from spectre at time = 1.70926 ns during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7
+
+Notice from spectre at time = 1.75726 ns during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7.
+
+Notice from spectre at time = 1.80526 ns during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `DifTempo-031_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 61.49 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (69.1 %)      1 (41.6 %)      2 (99.5 %)      3 (70.2 %)
+        Other   
+Initial condition solution time: CPU = 289 us, elapsed = 290.155 us.
+Intrinsic tran analysis time:    CPU = 8.502 ms, elapsed = 40.8721 ms.
+Total time required for tran analysis `DifTempo-031_DifTempo': CPU = 10.038 ms, elapsed = 42.4061 ms.
+Time accumulated: CPU = 799.24 ms, elapsed = 3.70665 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    34 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-032_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 258 us, elapsed = 259.161 us.
+
+Notice from spectre during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-032_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7......
+
+Notice from spectre at time = 1.92397 ns during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.97197 ns during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 2.01997 ns during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 2.06797 ns during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 2.11597 ns during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `DifTempo-032_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 41.08 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (70.1 %)      1 (41.4 %)      2 (99.5 %)      3 (69.1 %)
+        Other   
+Initial condition solution time: CPU = 310 us, elapsed = 312.09 us.
+Intrinsic tran analysis time:    CPU = 8.051 ms, elapsed = 32.0601 ms.
+Total time required for tran analysis `DifTempo-032_DifTempo': CPU = 9.459 ms, elapsed = 33.4699 ms.
+Time accumulated: CPU = 815.999 ms, elapsed = 3.82092 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    27 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-033_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 257 us, elapsed = 257.969 us.
+
+Notice from spectre during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-033_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 2.44993 ns during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 2.49793 ns during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 2.54593 ns during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 2.59393 ns during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.64193 ns during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             66
+
+Notice from spectre during transient analysis `DifTempo-033_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 25.91 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (71.1 %)      1 (41.8 %)      2 (99.5 %)      3 (70.1 %)
+        Other   
+Initial condition solution time: CPU = 299 us, elapsed = 300.884 us.
+Intrinsic tran analysis time:    CPU = 11.715 ms, elapsed = 47.2 ms.
+Total time required for tran analysis `DifTempo-033_DifTempo': CPU = 13.307 ms, elapsed = 48.8338 ms.
+Time accumulated: CPU = 836.331 ms, elapsed = 3.96157 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    16 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-034_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 254 us, elapsed = 253.916 us.
+
+Notice from spectre during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-034_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........4........3.....
+
+Notice from spectre at time = 2.8618 ns during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3.......
+
+Notice from spectre at time = 2.9098 ns during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2
+
+Notice from spectre at time = 2.9578 ns during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2.
+
+Notice from spectre at time = 3.0058 ns during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 3.0538 ns during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             67
+
+Notice from spectre during transient analysis `DifTempo-034_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 16.07 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (72.1 %)      1 (41.9 %)      2 (97.5 %)      3 (71.0 %)
+        Other   
+Initial condition solution time: CPU = 301 us, elapsed = 303.984 us.
+Intrinsic tran analysis time:    CPU = 12.655 ms, elapsed = 50.6279 ms.
+Total time required for tran analysis `DifTempo-034_DifTempo': CPU = 14.112 ms, elapsed = 52.084 ms.
+Time accumulated: CPU = 857.534 ms, elapsed = 4.08987 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    2 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-035_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 244 us, elapsed = 243.902 us.
+
+Notice from spectre during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-035_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+..
+
+Notice from spectre at time = 1.06537 ns during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9....
+
+Notice from spectre at time = 1.38448 ns during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.....
+
+Notice from spectre at time = 1.43248 ns during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9.......
+
+Notice from spectre at time = 1.48048 ns during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8
+
+Notice from spectre at time = 1.52848 ns during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `DifTempo-035_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 133.5 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (70.6 %)      1 (43.9 %)      2 (94.5 %)      3 (72.2 %)
+        Other   
+Initial condition solution time: CPU = 283 us, elapsed = 285.864 us.
+Intrinsic tran analysis time:    CPU = 7.733 ms, elapsed = 31.019 ms.
+Total time required for tran analysis `DifTempo-035_DifTempo': CPU = 9.105 ms, elapsed = 32.387 ms.
+Time accumulated: CPU = 875.257 ms, elapsed = 4.25348 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    39 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-036_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 252 us, elapsed = 252.008 us.
+
+Notice from spectre during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-036_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8.
+
+Notice from spectre at time = 1.5589 ns during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8...
+
+Notice from spectre at time = 1.6069 ns during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.....
+
+Notice from spectre at time = 1.6549 ns during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.......
+
+Notice from spectre at time = 1.7029 ns during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........
+
+Notice from spectre at time = 1.7509 ns during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `DifTempo-036_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 123 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (69.6 %)      1 (45.3 %)      2 (93.0 %)      3 (72.9 %)
+        Other   
+Initial condition solution time: CPU = 301 us, elapsed = 308.037 us.
+Intrinsic tran analysis time:    CPU = 8.516 ms, elapsed = 32.4481 ms.
+Total time required for tran analysis `DifTempo-036_DifTempo': CPU = 10.161 ms, elapsed = 34.2138 ms.
+Time accumulated: CPU = 892.927 ms, elapsed = 4.36445 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-037_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 275 us, elapsed = 276.089 us.
+
+Notice from spectre during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-037_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8..
+
+Notice from spectre at time = 1.57251 ns during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8...
+
+Notice from spectre at time = 1.62051 ns during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.....
+
+Notice from spectre at time = 1.66851 ns during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8.......
+
+Notice from spectre at time = 1.71651 ns during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7
+
+Notice from spectre at time = 1.76451 ns during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             76
+
+Notice from spectre during transient analysis `DifTempo-037_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 112.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (68.7 %)      1 (45.0 %)      2 (93.0 %)      3 (73.6 %)
+        Other   
+Initial condition solution time: CPU = 317 us, elapsed = 319.004 us.
+Intrinsic tran analysis time:    CPU = 7.869 ms, elapsed = 32.9299 ms.
+Total time required for tran analysis `DifTempo-037_DifTempo': CPU = 9.276 ms, elapsed = 34.332 ms.
+Time accumulated: CPU = 909.976 ms, elapsed = 4.48367 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-038_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 255 us, elapsed = 256.062 us.
+
+Notice from spectre during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-038_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8.......
+
+Notice from spectre at time = 1.708 ns during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7
+
+Notice from spectre at time = 1.756 ns during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7.
+
+Notice from spectre at time = 1.804 ns during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7...
+
+Notice from spectre at time = 1.852 ns during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7.....
+
+Notice from spectre at time = 1.9 ns during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `DifTempo-038_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 90.11 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (69.2 %)      1 (45.0 %)      2 (91.4 %)      3 (74.3 %)
+        Other   
+Initial condition solution time: CPU = 296 us, elapsed = 296.831 us.
+Intrinsic tran analysis time:    CPU = 7.489 ms, elapsed = 30.7019 ms.
+Total time required for tran analysis `DifTempo-038_DifTempo': CPU = 8.894 ms, elapsed = 32.1012 ms.
+Time accumulated: CPU = 926.192 ms, elapsed = 4.59554 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    32 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-039_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 258 us, elapsed = 258.923 us.
+
+Notice from spectre during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-039_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.94505 ns during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.99305 ns during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 2.04105 ns during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 2.08905 ns during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 2.13705 ns during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             69
+
+Notice from spectre during transient analysis `DifTempo-039_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 60.43 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (69.9 %)      1 (45.0 %)      2 (90.5 %)      3 (74.9 %)
+        Other   
+Initial condition solution time: CPU = 297 us, elapsed = 298.977 us.
+Intrinsic tran analysis time:    CPU = 7.359 ms, elapsed = 30.3731 ms.
+Total time required for tran analysis `DifTempo-039_DifTempo': CPU = 8.969 ms, elapsed = 31.9788 ms.
+Time accumulated: CPU = 942.563 ms, elapsed = 4.7123 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    27 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-040_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 246 us, elapsed = 247.002 us.
+
+Notice from spectre during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-040_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 2.52756 ns during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 2.57556 ns during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.62356 ns during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.67156 ns during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.71956 ns during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             66
+
+Notice from spectre during transient analysis `DifTempo-040_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 38.74 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (70.6 %)      1 (45.1 %)      2 (89.7 %)      3 (75.4 %)
+        Other   
+Initial condition solution time: CPU = 287 us, elapsed = 293.016 us.
+Intrinsic tran analysis time:    CPU = 8.618 ms, elapsed = 25.9411 ms.
+Total time required for tran analysis `DifTempo-040_DifTempo': CPU = 10.045 ms, elapsed = 27.4649 ms.
+Time accumulated: CPU = 959.864 ms, elapsed = 4.80751 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    15 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-041_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 262 us, elapsed = 262.976 us.
+
+Notice from spectre during transient analysis `DifTempo-041_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-041_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 3.03791 ns during transient analysis `DifTempo-041_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 3.08591 ns during transient analysis `DifTempo-041_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2......
+
+Notice from spectre at time = 3.125 ns during transient analysis `DifTempo-041_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             59
+
+Notice from spectre during transient analysis `DifTempo-041_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 25.09 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (71.1 %)      1 (44.9 %)      2 (88.8 %)      3 (75.8 %)
+        Other   
+Initial condition solution time: CPU = 319 us, elapsed = 324.965 us.
+Intrinsic tran analysis time:    CPU = 7.763 ms, elapsed = 23.3769 ms.
+Total time required for tran analysis `DifTempo-041_DifTempo': CPU = 9.306 ms, elapsed = 25.07 ms.
+Time accumulated: CPU = 976.745 ms, elapsed = 4.88906 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-042_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 258 us, elapsed = 258.923 us.
+
+Notice from spectre during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-042_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8.
+
+Notice from spectre at time = 1.55116 ns during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8...
+
+Notice from spectre at time = 1.59916 ns during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8....
+
+Notice from spectre at time = 1.64716 ns during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8......
+
+Notice from spectre at time = 1.69516 ns during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........
+
+Notice from spectre at time = 1.74316 ns during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `DifTempo-042_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 134.9 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (71.7 %)      1 (44.8 %)      2 (87.2 %)      3 (76.4 %)
+        Other   
+Initial condition solution time: CPU = 299 us, elapsed = 300.884 us.
+Intrinsic tran analysis time:    CPU = 7.528 ms, elapsed = 23.4349 ms.
+Total time required for tran analysis `DifTempo-042_DifTempo': CPU = 8.948 ms, elapsed = 24.8561 ms.
+Time accumulated: CPU = 994.813 ms, elapsed = 5.00522 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-043_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 253 us, elapsed = 253.201 us.
+
+Notice from spectre during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-043_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8....
+
+Notice from spectre at time = 1.63803 ns during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8......
+
+Notice from spectre at time = 1.68603 ns during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........
+
+Notice from spectre at time = 1.73403 ns during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7.
+
+Notice from spectre at time = 1.78203 ns during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7..
+
+Notice from spectre at time = 1.83003 ns during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `DifTempo-043_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 128 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (72.3 %)      1 (45.0 %)      2 (86.2 %)      3 (76.8 %)
+        Other   
+Initial condition solution time: CPU = 303 us, elapsed = 309.944 us.
+Intrinsic tran analysis time:    CPU = 8.074 ms, elapsed = 23.721 ms.
+Total time required for tran analysis `DifTempo-043_DifTempo': CPU = 9.716 ms, elapsed = 25.8269 ms.
+Time accumulated: CPU = 1.01164 s, elapsed = 5.08962 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    33 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-044_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 258 us, elapsed = 258.923 us.
+
+Notice from spectre during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-044_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8......
+
+Notice from spectre at time = 1.69182 ns during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........
+
+Notice from spectre at time = 1.73982 ns during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7.
+
+Notice from spectre at time = 1.78782 ns during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7...
+
+Notice from spectre at time = 1.83582 ns during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7....
+
+Notice from spectre at time = 1.88382 ns during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `DifTempo-044_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 122.3 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (72.7 %)      1 (44.7 %)      2 (85.5 %)      3 (77.2 %)
+        Other   
+Initial condition solution time: CPU = 301 us, elapsed = 307.798 us.
+Intrinsic tran analysis time:    CPU = 8.056 ms, elapsed = 23.443 ms.
+Total time required for tran analysis `DifTempo-044_DifTempo': CPU = 9.533 ms, elapsed = 25.0649 ms.
+Time accumulated: CPU = 1.02858 s, elapsed = 5.17207 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    32 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-045_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 268 us, elapsed = 268.936 us.
+
+Notice from spectre during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-045_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........
+
+Notice from spectre at time = 1.97379 ns during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 2.02179 ns during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 2.06979 ns during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 2.11779 ns during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 2.16579 ns during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `DifTempo-045_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 112.2 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (73.1 %)      1 (44.6 %)      2 (84.9 %)      3 (77.6 %)
+        Other   
+Initial condition solution time: CPU = 321 us, elapsed = 327.11 us.
+Intrinsic tran analysis time:    CPU = 8.323 ms, elapsed = 24.4689 ms.
+Total time required for tran analysis `DifTempo-045_DifTempo': CPU = 9.834 ms, elapsed = 26.135 ms.
+Time accumulated: CPU = 1.04545 s, elapsed = 5.25661 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-046_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 260 us, elapsed = 261.068 us.
+
+Notice from spectre during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-046_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6....
+
+Notice from spectre at time = 2.12251 ns during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 2.17051 ns during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 2.21851 ns during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 2.26651 ns during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 2.31451 ns during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             66
+
+Notice from spectre during transient analysis `DifTempo-046_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 88.66 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (73.6 %)      1 (44.3 %)      2 (84.0 %)      3 (77.9 %)
+        Other   
+Initial condition solution time: CPU = 309 us, elapsed = 359.058 us.
+Intrinsic tran analysis time:    CPU = 7.979 ms, elapsed = 22.6691 ms.
+Total time required for tran analysis `DifTempo-046_DifTempo': CPU = 9.607 ms, elapsed = 25.1961 ms.
+Time accumulated: CPU = 1.06222 s, elapsed = 5.33912 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-047_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 262 us, elapsed = 263.214 us.
+
+Notice from spectre during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-047_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.6514 ns during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.6994 ns during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3.
+
+Notice from spectre at time = 2.7474 ns during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3...
+
+Notice from spectre at time = 2.7954 ns during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3....
+
+Notice from spectre at time = 2.8434 ns during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             63
+
+Notice from spectre during transient analysis `DifTempo-047_DifTempo', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 60.59 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (74.0 %)      1 (44.3 %)      2 (83.5 %)      3 (78.2 %)
+        Other   
+Initial condition solution time: CPU = 319 us, elapsed = 327.11 us.
+Intrinsic tran analysis time:    CPU = 8.669 ms, elapsed = 24.565 ms.
+Total time required for tran analysis `DifTempo-047_DifTempo': CPU = 10.33 ms, elapsed = 26.3579 ms.
+Time accumulated: CPU = 1.07959 s, elapsed = 5.42365 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    12 notices suppressed.
+
+
+*******************************************************************
+Transient Analysis `DifTempo-048_DifTempo': time = (1 ns -> 3.4 ns)
+*******************************************************************
+DC simulation time: CPU = 277 us, elapsed = 277.042 us.
+
+Notice from spectre during transient analysis `DifTempo-048_DifTempo', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file inversor.raw/DifTempo-048_DifTempo.tran.tran ...
+Important parameter values:
+    start = 1 ns
+    outputstart = 1 ns
+    stop = 3.4 ns
+    step = 2.4 ps
+    maxstep = 48 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   3       (voltage)
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             59
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_1:dbnode) = 1 V
+I: I(Vd:p) = 40.1 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          maxstep = 48 ps, default 68 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (74.4 %)      1 (44.1 %)      2 (82.9 %)      3 (78.6 %)
+        Other   
+Initial condition solution time: CPU = 326 us, elapsed = 333.071 us.
+Intrinsic tran analysis time:    CPU = 5.783 ms, elapsed = 21.594 ms.
+Total time required for tran analysis `DifTempo-048_DifTempo': CPU = 7.32 ms, elapsed = 23.284 ms.
+Time accumulated: CPU = 1.09429 s, elapsed = 5.50406 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Aggregate audit (12:30:53 PM, Mon Jan 13, 2020):
+Time used: CPU = 1.1 s, elapsed = 5.55 s, util. = 19.8%.
+Time spent in licensing: elapsed = 23.5 ms.
+Peak memory used = 65.3 Mbytes.
+Simulation started at: 12:30:47 PM, Mon Jan 13, 2020, ended at: 12:30:53 PM, Mon Jan 13, 2020, with elapsed time (wall clock): 5.55 s.
+spectre completes with 0 errors, 3 warnings, and 382 notices.

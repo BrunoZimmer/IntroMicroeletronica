@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*Lab05c'
+TempInv TempNand TempXnor TempOr TempRede alter# 
+9.13456e-11 3.85601e-11 9.06503e-11 8.45992e-11 3.05155e-10 2 
+

@@ -1,0 +1,8 @@
+alias measurement Capacitancia {
+	run tran (start=1n, stop = 4n)
+	export real = ((I(Va:p) @ (1n+(risetime(sig=V(out),initval=0,finalval=1) / 5))) / (deriv(sig=V(a)) @ (1n+(risetime(sig=V(out),initval=0,finalval=1) / 5))))
+}
+
+run Capacitancia
+
+

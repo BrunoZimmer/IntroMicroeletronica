@@ -1,0 +1,9 @@
+*MDL code
+
+alias measurement Derivada {
+	run tran (start=1n, stop = 4n)
+	export real Der = deriv(sig=V(a)) @ 1.16n
+}
+
+run Derivada
+

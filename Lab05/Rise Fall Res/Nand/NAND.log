@@ -1,0 +1,4865 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 29325
+Memory  available: 747.6101 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3313.4 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 53.0 %, 57.8 %, 58.2 %
+
+
+Simulating `NAND.scs' on itacolomi.lapsi at 12:37:59 PM, Mon Jan 13, 2020 (process id: 29325).
+Current working directory: /home/brunozimmer/Documentos/Lab05a/Nand
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        frtime.mdl NAND.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Nand/NAND.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Nand/NAND2.spi
+Reading file:  /home/brunozimmer/Documentos/Lab05a/Nand/45nm_LP.pm
+Time for NDB Parsing: CPU = 213.723 ms, elapsed = 236.417 ms.
+Time accumulated: CPU = 232.417 ms, elapsed = 236.426 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 18.854 ms, elapsed = 19.855 ms.
+Time accumulated: CPU = 251.445 ms, elapsed = 256.477 ms.
+Peak resident memory used = 59.6 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-2468): A MDL control file 'frtime.mdl' is specified.  All .measure, .print and .probe statements in netlist 'NAND.scs' are ignored.
+
+
+
+Warning from spectre during circuit read-in.
+    WARNING:     Analysis tran for .print not found, ignoring
+
+Time for EDB Visiting: CPU = 956 us, elapsed = 1.019 ms.
+Time accumulated: CPU = 252.566 ms, elapsed = 257.68 ms.
+Peak resident memory used = 60.3 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 6
+              bsim4 8     
+          capacitor 1     
+            vsource 3     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 1     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.405 ms, elapsed = 43.354 ms.
+Time accumulated: CPU = 255.12 ms, elapsed = 301.201 ms.
+Peak resident memory used = 61.7 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************************************************************
+Transient Analysis `RiseTime-000_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 756 us, elapsed = 756.979 us.
+
+Notice from spectre during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-000_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........
+
+Notice from spectre at time = 1.22358 ns during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.28358 ns during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.34358 ns during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.40358 ns during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46358 ns during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             89
+
+Notice from spectre during transient analysis `RiseTime-000_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 156.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (73.0 %)      1 (41.7 %)      2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 815 us, elapsed = 817.06 us.
+Intrinsic tran analysis time:    CPU = 14.972 ms, elapsed = 44.6761 ms.
+Total time required for tran analysis `RiseTime-000_RiseTime': CPU = 17.252 ms, elapsed = 46.9539 ms.
+Time accumulated: CPU = 280.649 ms, elapsed = 419.86 ms.
+Peak resident memory used = 64.2 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-001_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 516 us, elapsed = 516.891 us.
+
+Notice from spectre during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-001_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2682 ns during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.3282 ns during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.3882 ns during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.4482 ns during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.5082 ns during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             87
+
+Notice from spectre during transient analysis `RiseTime-001_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 99.07 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (68.9 %)      1 (39.1 %)      2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 568 us, elapsed = 570.059 us.
+Intrinsic tran analysis time:    CPU = 14.387 ms, elapsed = 33.149 ms.
+Total time required for tran analysis `RiseTime-001_RiseTime': CPU = 16.162 ms, elapsed = 34.925 ms.
+Time accumulated: CPU = 304.136 ms, elapsed = 507.837 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-002_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 466 us, elapsed = 466.108 us.
+
+Notice from spectre during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-002_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42316 ns during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.48316 ns during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.54316 ns during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.60316 ns during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.66316 ns during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             89
+
+Notice from spectre during transient analysis `RiseTime-002_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 69.14 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (67.9 %)      1 (42.9 %)      2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 507 us, elapsed = 514.984 us.
+Intrinsic tran analysis time:    CPU = 16.382 ms, elapsed = 40.9131 ms.
+Total time required for tran analysis `RiseTime-002_RiseTime': CPU = 18.11 ms, elapsed = 42.836 ms.
+Time accumulated: CPU = 329.678 ms, elapsed = 616.503 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-003_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 519 us, elapsed = 519.037 us.
+
+Notice from spectre during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-003_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.58213 ns during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.64213 ns during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.70213 ns during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.76213 ns during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.82213 ns during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             90
+
+Notice from spectre during transient analysis `RiseTime-003_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 41.43 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (65.2 %)      1 (42.4 %)      2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 579 us, elapsed = 782.967 us.
+Intrinsic tran analysis time:    CPU = 15.13 ms, elapsed = 37.3971 ms.
+Total time required for tran analysis `RiseTime-003_RiseTime': CPU = 17.256 ms, elapsed = 40.854 ms.
+Time accumulated: CPU = 354.222 ms, elapsed = 714.306 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-004_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 475 us, elapsed = 475.883 us.
+
+Notice from spectre during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-004_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.07833 ns during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.13833 ns during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3.
+
+Notice from spectre at time = 2.19833 ns during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3...
+
+Notice from spectre at time = 2.25833 ns during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3.....
+
+Notice from spectre at time = 2.31833 ns during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `RiseTime-004_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 25.24 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (63.2 %)      1 (40.0 %)      2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 517 us, elapsed = 517.845 us.
+Intrinsic tran analysis time:    CPU = 14.829 ms, elapsed = 32.5599 ms.
+Total time required for tran analysis `RiseTime-004_RiseTime': CPU = 16.478 ms, elapsed = 34.2078 ms.
+Time accumulated: CPU = 377.949 ms, elapsed = 809.254 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    12 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-005_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 490 us, elapsed = 489.95 us.
+
+Notice from spectre during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-005_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.06634 ns during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.12634 ns during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.
+
+Notice from spectre at time = 2.49806 ns during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 2.55806 ns during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.61806 ns during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `RiseTime-005_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 14.24 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (62.8 %)      1 (40.7 %)      2 (100.0 %)     3 (98.9 %)
+        Other   
+Initial condition solution time: CPU = 536 us, elapsed = 542.879 us.
+Intrinsic tran analysis time:    CPU = 16.152 ms, elapsed = 43.5941 ms.
+Total time required for tran analysis `RiseTime-005_RiseTime': CPU = 17.958 ms, elapsed = 45.501 ms.
+Time accumulated: CPU = 403.062 ms, elapsed = 910.322 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    7 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-006_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 488 us, elapsed = 488.997 us.
+
+Notice from spectre during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-006_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18226 ns during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.24226 ns during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30226 ns during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36226 ns during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42226 ns during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             67
+
+Notice from spectre during transient analysis `RiseTime-006_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 8.75 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (61.3 %)      1 (45.7 %)      2 (100.0 %)     3 (92.7 %)
+        Other   
+Initial condition solution time: CPU = 528 us, elapsed = 530.005 us.
+Intrinsic tran analysis time:    CPU = 11.434 ms, elapsed = 26.0801 ms.
+Total time required for tran analysis `RiseTime-006_RiseTime': CPU = 13.347 ms, elapsed = 27.9951 ms.
+Time accumulated: CPU = 423.573 ms, elapsed = 993.036 ms.
+Peak resident memory used = 64.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    7 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-007_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 494 us, elapsed = 494.003 us.
+
+Notice from spectre during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-007_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........
+
+Notice from spectre at time = 1.22442 ns during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.28442 ns during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.34442 ns during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.40442 ns during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46442 ns during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `RiseTime-007_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 164.2 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (59.4 %)      1 (51.9 %)      2 (100.0 %)     3 (85.0 %)
+        Other   
+Initial condition solution time: CPU = 536 us, elapsed = 536.919 us.
+Intrinsic tran analysis time:    CPU = 13.915 ms, elapsed = 31.1038 ms.
+Total time required for tran analysis `RiseTime-007_RiseTime': CPU = 15.693 ms, elapsed = 32.9208 ms.
+Time accumulated: CPU = 448.372 ms, elapsed = 1.11572 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-008_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 511 us, elapsed = 512.123 us.
+
+Notice from spectre during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-008_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.13873 ns during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.1523 ns during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.16916 ns during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.18929 ns during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.21255 ns during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             99
+
+Notice from spectre during transient analysis `RiseTime-008_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 105.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.8 %)      1 (55.7 %)      2 (100.0 %)     3 (81.0 %)
+        Other   
+Initial condition solution time: CPU = 555 us, elapsed = 557.184 us.
+Intrinsic tran analysis time:    CPU = 15.331 ms, elapsed = 31.1551 ms.
+Total time required for tran analysis `RiseTime-008_RiseTime': CPU = 17.229 ms, elapsed = 33.052 ms.
+Time accumulated: CPU = 472.797 ms, elapsed = 1.20649 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    43 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-009_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 473 us, elapsed = 473.976 us.
+
+Notice from spectre during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-009_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.51384 ns during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.57384 ns during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.63384 ns during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.69384 ns during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.75384 ns during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `RiseTime-009_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 72.3 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.9 %)      1 (56.1 %)      2 (100.0 %)     3 (80.6 %)
+        Other   
+Initial condition solution time: CPU = 514 us, elapsed = 515.938 us.
+Intrinsic tran analysis time:    CPU = 14.477 ms, elapsed = 31.2722 ms.
+Total time required for tran analysis `RiseTime-009_RiseTime': CPU = 16.371 ms, elapsed = 33.1659 ms.
+Time accumulated: CPU = 496.362 ms, elapsed = 1.29833 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    21 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-010_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 494 us, elapsed = 495.911 us.
+
+Notice from spectre during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-010_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.59843 ns during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.65843 ns during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.71843 ns during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.77843 ns during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.83843 ns during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `RiseTime-010_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 44.52 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.2 %)      1 (54.9 %)      2 (100.0 %)     3 (82.0 %)
+        Other   
+Initial condition solution time: CPU = 535 us, elapsed = 536.919 us.
+Intrinsic tran analysis time:    CPU = 14.598 ms, elapsed = 30.277 ms.
+Total time required for tran analysis `RiseTime-010_RiseTime': CPU = 16.36 ms, elapsed = 32.069 ms.
+Time accumulated: CPU = 519.994 ms, elapsed = 1.38892 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-011_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 519 us, elapsed = 519.991 us.
+
+Notice from spectre during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-011_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.59375 ns during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.90775 ns during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.96775 ns during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.02775 ns during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.08775 ns during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `RiseTime-011_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 27.46 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.3 %)      1 (54.6 %)      2 (100.0 %)     3 (83.0 %)
+        Other   
+Initial condition solution time: CPU = 565 us, elapsed = 572.92 us.
+Intrinsic tran analysis time:    CPU = 15.228 ms, elapsed = 32.778 ms.
+Total time required for tran analysis `RiseTime-011_RiseTime': CPU = 17.184 ms, elapsed = 34.869 ms.
+Time accumulated: CPU = 544.207 ms, elapsed = 1.47515 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    16 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-012_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 474 us, elapsed = 476.122 us.
+
+Notice from spectre during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-012_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.04674 ns during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.10674 ns during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.1275 ns during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 2.57479 ns during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.63479 ns during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `RiseTime-012_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 16.13 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (55.9 %)      1 (54.0 %)      2 (100.0 %)     3 (83.3 %)
+        Other   
+Initial condition solution time: CPU = 526 us, elapsed = 533.104 us.
+Intrinsic tran analysis time:    CPU = 14.166 ms, elapsed = 33.2401 ms.
+Total time required for tran analysis `RiseTime-012_RiseTime': CPU = 15.964 ms, elapsed = 35.192 ms.
+Time accumulated: CPU = 567.609 ms, elapsed = 1.56763 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    7 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-013_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 492 us, elapsed = 493.05 us.
+
+Notice from spectre during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-013_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18267 ns during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........
+
+Notice from spectre at time = 1.24267 ns during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30267 ns during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36267 ns during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42267 ns during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             66
+
+Notice from spectre during transient analysis `RiseTime-013_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 9.421 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (55.6 %)      1 (56.6 %)      2 (100.0 %)     3 (81.2 %)
+        Other   
+Initial condition solution time: CPU = 539 us, elapsed = 549.078 us.
+Intrinsic tran analysis time:    CPU = 12.569 ms, elapsed = 30.3581 ms.
+Total time required for tran analysis `RiseTime-013_RiseTime': CPU = 14.369 ms, elapsed = 32.321 ms.
+Time accumulated: CPU = 589.121 ms, elapsed = 1.65618 s.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    6 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-014_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 482 us, elapsed = 481.844 us.
+
+Notice from spectre during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-014_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.28009 ns during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.34009 ns during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.40009 ns during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46009 ns during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.52009 ns during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `RiseTime-014_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 170.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.4 %)      1 (56.4 %)      2 (100.0 %)     3 (77.5 %)
+        Other   
+Initial condition solution time: CPU = 521 us, elapsed = 522.852 us.
+Intrinsic tran analysis time:    CPU = 14.138 ms, elapsed = 29.572 ms.
+Total time required for tran analysis `RiseTime-014_RiseTime': CPU = 15.914 ms, elapsed = 31.3461 ms.
+Time accumulated: CPU = 614.095 ms, elapsed = 1.78121 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-015_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 496 us, elapsed = 495.911 us.
+
+Notice from spectre during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-015_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.24542 ns during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30542 ns during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36542 ns during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42542 ns during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.48542 ns during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `RiseTime-015_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 118.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.4 %)      1 (58.6 %)      2 (100.0 %)     3 (75.8 %)
+        Other   
+Initial condition solution time: CPU = 541 us, elapsed = 542.879 us.
+Intrinsic tran analysis time:    CPU = 14.001 ms, elapsed = 30.04 ms.
+Total time required for tran analysis `RiseTime-015_RiseTime': CPU = 15.831 ms, elapsed = 31.8711 ms.
+Time accumulated: CPU = 637.093 ms, elapsed = 1.87251 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-016_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 488 us, elapsed = 488.997 us.
+
+Notice from spectre during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-016_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.49574 ns during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.55574 ns during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.61574 ns during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.67574 ns during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.73574 ns during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `RiseTime-016_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 81.86 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.8 %)      1 (60.5 %)      2 (100.0 %)     3 (74.0 %)
+        Other   
+Initial condition solution time: CPU = 538 us, elapsed = 540.018 us.
+Intrinsic tran analysis time:    CPU = 15.344 ms, elapsed = 37.298 ms.
+Total time required for tran analysis `RiseTime-016_RiseTime': CPU = 17.075 ms, elapsed = 39.027 ms.
+Time accumulated: CPU = 661.714 ms, elapsed = 1.96365 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-017_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 487 us, elapsed = 488.043 us.
+
+Notice from spectre during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-017_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.5774 ns during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.6374 ns during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.6974 ns during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.7574 ns during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.8174 ns during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `RiseTime-017_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 50.54 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.5 %)      1 (62.1 %)      2 (100.0 %)     3 (72.9 %)
+        Other   
+Initial condition solution time: CPU = 532 us, elapsed = 532.866 us.
+Intrinsic tran analysis time:    CPU = 15.161 ms, elapsed = 31.203 ms.
+Total time required for tran analysis `RiseTime-017_RiseTime': CPU = 17.057 ms, elapsed = 33.1011 ms.
+Time accumulated: CPU = 686.111 ms, elapsed = 2.04964 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-018_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 491 us, elapsed = 493.05 us.
+
+Notice from spectre during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-018_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.85468 ns during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.91468 ns during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.97468 ns during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.03468 ns during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.09468 ns during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             81
+
+Notice from spectre during transient analysis `RiseTime-018_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 31.29 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.2 %)      1 (63.6 %)      2 (100.0 %)     3 (71.2 %)
+        Other   
+Initial condition solution time: CPU = 550 us, elapsed = 555.992 us.
+Intrinsic tran analysis time:    CPU = 14.53 ms, elapsed = 29.8262 ms.
+Total time required for tran analysis `RiseTime-018_RiseTime': CPU = 16.386 ms, elapsed = 31.8348 ms.
+Time accumulated: CPU = 710.397 ms, elapsed = 2.13154 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    16 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-019_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 507 us, elapsed = 508.07 us.
+
+Notice from spectre during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-019_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.05588 ns during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.11588 ns during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3
+
+Notice from spectre at time = 2.1275 ns during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2..
+
+Notice from spectre at time = 2.54323 ns during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 2.60323 ns during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `RiseTime-019_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 18.52 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.1 %)      1 (65.1 %)      2 (100.0 %)     3 (70.7 %)
+        Other   
+Initial condition solution time: CPU = 561 us, elapsed = 566.959 us.
+Intrinsic tran analysis time:    CPU = 14.185 ms, elapsed = 30.246 ms.
+Total time required for tran analysis `RiseTime-019_RiseTime': CPU = 16.167 ms, elapsed = 32.3451 ms.
+Time accumulated: CPU = 733.87 ms, elapsed = 2.21499 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    7 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-020_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 473 us, elapsed = 473.976 us.
+
+Notice from spectre during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-020_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36355 ns during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42355 ns during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.54355 ns during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1.
+
+Notice from spectre at time = 2.77676 ns during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1..
+
+Notice from spectre at time = 2.83676 ns during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             64
+
+Notice from spectre during transient analysis `RiseTime-020_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 11.21 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (56.1 %)      1 (66.8 %)      2 (100.0 %)     3 (68.3 %)
+        Other   
+Initial condition solution time: CPU = 512 us, elapsed = 514.03 us.
+Intrinsic tran analysis time:    CPU = 12.236 ms, elapsed = 36.0842 ms.
+Total time required for tran analysis `RiseTime-020_RiseTime': CPU = 13.931 ms, elapsed = 37.78 ms.
+Time accumulated: CPU = 755.281 ms, elapsed = 2.33551 s.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-021_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 486 us, elapsed = 486.851 us.
+
+Notice from spectre during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-021_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.26998 ns during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.32998 ns during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.38998 ns during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.44998 ns during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.50998 ns during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `RiseTime-021_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 198.6 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.7 %)      1 (69.4 %)      2 (100.0 %)     3 (65.0 %)
+        Other   
+Initial condition solution time: CPU = 531 us, elapsed = 531.912 us.
+Intrinsic tran analysis time:    CPU = 16.63 ms, elapsed = 51.0418 ms.
+Total time required for tran analysis `RiseTime-021_RiseTime': CPU = 18.474 ms, elapsed = 52.9351 ms.
+Time accumulated: CPU = 782.731 ms, elapsed = 2.51999 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-022_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 475 us, elapsed = 475.883 us.
+
+Notice from spectre during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-022_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.....
+
+Notice from spectre at time = 1.07928 ns during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.08593 ns during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.26616 ns during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.32616 ns during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.38616 ns during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `RiseTime-022_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 145.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.8 %)      1 (71.0 %)      2 (100.0 %)     3 (64.9 %)
+        Other   
+Initial condition solution time: CPU = 518 us, elapsed = 518.799 us.
+Intrinsic tran analysis time:    CPU = 13.61 ms, elapsed = 37.8978 ms.
+Total time required for tran analysis `RiseTime-022_RiseTime': CPU = 15.323 ms, elapsed = 39.6109 ms.
+Time accumulated: CPU = 805.37 ms, elapsed = 2.65606 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    27 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-023_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 516 us, elapsed = 516.891 us.
+
+Notice from spectre during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-023_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46545 ns during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.52545 ns during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.58545 ns during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.64545 ns during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.70545 ns during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `RiseTime-023_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 104.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (54.9 %)      1 (72.3 %)      2 (100.0 %)     3 (63.3 %)
+        Other   
+Initial condition solution time: CPU = 566 us, elapsed = 568.151 us.
+Intrinsic tran analysis time:    CPU = 14.559 ms, elapsed = 45.042 ms.
+Total time required for tran analysis `RiseTime-023_RiseTime': CPU = 16.456 ms, elapsed = 46.9391 ms.
+Time accumulated: CPU = 829.343 ms, elapsed = 2.78027 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    22 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-024_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 500 us, elapsed = 499.964 us.
+
+Notice from spectre during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-024_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.67899 ns during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.73899 ns during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.79899 ns during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.85899 ns during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.91899 ns during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `RiseTime-024_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 65.91 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.8 %)      1 (73.6 %)      2 (100.0 %)     3 (61.5 %)
+        Other   
+Initial condition solution time: CPU = 542 us, elapsed = 544.071 us.
+Intrinsic tran analysis time:    CPU = 14.796 ms, elapsed = 39.0131 ms.
+Total time required for tran analysis `RiseTime-024_RiseTime': CPU = 16.524 ms, elapsed = 40.7422 ms.
+Time accumulated: CPU = 853.484 ms, elapsed = 2.90753 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-025_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 476 us, elapsed = 476.122 us.
+
+Notice from spectre during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-025_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.84441 ns during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.90441 ns during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.96441 ns during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.02441 ns during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.08441 ns during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             81
+
+Notice from spectre during transient analysis `RiseTime-025_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 39.96 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.5 %)      1 (74.7 %)      2 (100.0 %)     3 (60.0 %)
+        Other   
+Initial condition solution time: CPU = 527 us, elapsed = 532.866 us.
+Intrinsic tran analysis time:    CPU = 14.073 ms, elapsed = 37.6792 ms.
+Total time required for tran analysis `RiseTime-025_RiseTime': CPU = 16.063 ms, elapsed = 39.8049 ms.
+Time accumulated: CPU = 877.244 ms, elapsed = 3.02334 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    16 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-026_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 492 us, elapsed = 493.05 us.
+
+Notice from spectre during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-026_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.1275 ns during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.61138 ns during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2......
+
+Notice from spectre at time = 2.67138 ns during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........
+
+Notice from spectre at time = 2.73138 ns during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........1.
+
+Notice from spectre at time = 2.79138 ns during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `RiseTime-026_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 25.13 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.8 %)      1 (75.6 %)      2 (100.0 %)     3 (59.3 %)
+        Other   
+Initial condition solution time: CPU = 543 us, elapsed = 549.078 us.
+Intrinsic tran analysis time:    CPU = 14.743 ms, elapsed = 43.34 ms.
+Total time required for tran analysis `RiseTime-026_RiseTime': CPU = 16.559 ms, elapsed = 45.3131 ms.
+Time accumulated: CPU = 901.229 ms, elapsed = 3.14527 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    4 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-027_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 469 us, elapsed = 469.923 us.
+
+Notice from spectre during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-027_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42627 ns during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.54627 ns during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1....
+
+Notice from spectre at time = 2.90215 ns during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........1......
+
+Notice from spectre at time = 2.95108 ns during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........1........
+
+Notice from spectre at time = 3 ns during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             65
+
+Notice from spectre during transient analysis `RiseTime-027_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 15.01 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.3 %)      1 (76.6 %)      2 (100.0 %)     3 (57.7 %)
+        Other   
+Initial condition solution time: CPU = 508 us, elapsed = 509.977 us.
+Intrinsic tran analysis time:    CPU = 12.561 ms, elapsed = 36.6838 ms.
+Total time required for tran analysis `RiseTime-027_RiseTime': CPU = 14.411 ms, elapsed = 38.5339 ms.
+Time accumulated: CPU = 923.079 ms, elapsed = 3.26376 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+****************************************************************
+Transient Analysis `RiseTime-028_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 522 us, elapsed = 523.09 us.
+
+Notice from spectre during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-028_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.....
+
+Notice from spectre at time = 1.05125 ns during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_0__m0_m2__m1:int_b.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.37017 ns during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.43017 ns during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.49017 ns during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.55017 ns during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             88
+
+Notice from spectre during transient analysis `RiseTime-028_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 219.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.3 %)      1 (77.5 %)      2 (100.0 %)     3 (56.9 %)
+        Other   
+Initial condition solution time: CPU = 589 us, elapsed = 655.89 us.
+Intrinsic tran analysis time:    CPU = 13.933 ms, elapsed = 26.171 ms.
+Total time required for tran analysis `RiseTime-028_RiseTime': CPU = 16.118 ms, elapsed = 30.899 ms.
+Time accumulated: CPU = 948.178 ms, elapsed = 3.3986 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-029_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 495 us, elapsed = 496.149 us.
+
+Notice from spectre during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-029_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7......
+
+Notice from spectre at time = 1.09141 ns during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.32804 ns during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.38804 ns during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.44804 ns during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.50804 ns during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             87
+
+Notice from spectre during transient analysis `RiseTime-029_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 184.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.3 %)      1 (78.1 %)      2 (100.0 %)     3 (56.6 %)
+        Other   
+Initial condition solution time: CPU = 545 us, elapsed = 552.177 us.
+Intrinsic tran analysis time:    CPU = 15.163 ms, elapsed = 32.918 ms.
+Total time required for tran analysis `RiseTime-029_RiseTime': CPU = 16.996 ms, elapsed = 34.8899 ms.
+Time accumulated: CPU = 972.527 ms, elapsed = 3.48529 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-030_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 464 us, elapsed = 464.201 us.
+
+Notice from spectre during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-030_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.......
+
+Notice from spectre at time = 1.1238 ns during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.37352 ns during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.43352 ns during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.49352 ns during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.55352 ns during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `RiseTime-030_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 135.3 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.9 %)      1 (78.6 %)      2 (100.0 %)     3 (55.6 %)
+        Other   
+Initial condition solution time: CPU = 502 us, elapsed = 504.017 us.
+Intrinsic tran analysis time:    CPU = 13.523 ms, elapsed = 29.649 ms.
+Total time required for tran analysis `RiseTime-030_RiseTime': CPU = 15.377 ms, elapsed = 31.5449 ms.
+Time accumulated: CPU = 995.213 ms, elapsed = 3.57361 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    25 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-031_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 483 us, elapsed = 483.99 us.
+
+Notice from spectre during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-031_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.66561 ns during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.72561 ns during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.78561 ns during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.84561 ns during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.90561 ns during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             84
+
+Notice from spectre during transient analysis `RiseTime-031_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 87.28 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.8 %)      1 (79.1 %)      2 (100.0 %)     3 (54.7 %)
+        Other   
+Initial condition solution time: CPU = 543 us, elapsed = 543.833 us.
+Intrinsic tran analysis time:    CPU = 14.588 ms, elapsed = 30.5841 ms.
+Total time required for tran analysis `RiseTime-031_RiseTime': CPU = 16.285 ms, elapsed = 32.2809 ms.
+Time accumulated: CPU = 1.01878 s, elapsed = 3.65762 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    19 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-032_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 487 us, elapsed = 488.043 us.
+
+Notice from spectre during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-032_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.88329 ns during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.94329 ns during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4....
+
+Notice from spectre at time = 2.00329 ns during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.06329 ns during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.12329 ns during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `RiseTime-032_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 56.12 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.4 %)      1 (78.5 %)      2 (100.0 %)     3 (55.0 %)
+        Other   
+Initial condition solution time: CPU = 544 us, elapsed = 550.985 us.
+Intrinsic tran analysis time:    CPU = 14.543 ms, elapsed = 30.046 ms.
+Total time required for tran analysis `RiseTime-032_RiseTime': CPU = 16.553 ms, elapsed = 32.1841 ms.
+Time accumulated: CPU = 1.04281 s, elapsed = 3.74099 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    15 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-033_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 472 us, elapsed = 473.022 us.
+
+Notice from spectre during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-033_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.62141 ns during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.68141 ns during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........
+
+Notice from spectre at time = 2.74141 ns during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........1.
+
+Notice from spectre at time = 2.80141 ns during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2........1...
+
+Notice from spectre at time = 2.86141 ns during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             76
+
+Notice from spectre during transient analysis `RiseTime-033_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(out) = 1 V
+I: I(Vd:p) = 35.05 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.6 %)      1 (79.0 %)      2 (100.0 %)     3 (54.4 %)
+        Other   
+Initial condition solution time: CPU = 512 us, elapsed = 512.838 us.
+Intrinsic tran analysis time:    CPU = 15.58 ms, elapsed = 34.976 ms.
+Total time required for tran analysis `RiseTime-033_RiseTime': CPU = 17.245 ms, elapsed = 36.6418 ms.
+Time accumulated: CPU = 1.06705 s, elapsed = 3.8287 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    3 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-034_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 468 us, elapsed = 468.016 us.
+
+Notice from spectre during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-034_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42992 ns during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.54992 ns during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1....
+
+Notice from spectre at time = 2.88501 ns during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1......
+
+Notice from spectre at time = 2.94501 ns during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1.......
+
+Notice from spectre at time = 3 ns during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             62
+
+Notice from spectre during transient analysis `RiseTime-034_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 21.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.3 %)      1 (79.5 %)      2 (100.0 %)     3 (53.9 %)
+        Other   
+Initial condition solution time: CPU = 520 us, elapsed = 526.905 us.
+Intrinsic tran analysis time:    CPU = 12.268 ms, elapsed = 27.7579 ms.
+Total time required for tran analysis `RiseTime-034_RiseTime': CPU = 14.055 ms, elapsed = 29.81 ms.
+Time accumulated: CPU = 1.08841 s, elapsed = 3.91387 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+****************************************************************
+Transient Analysis `RiseTime-035_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 485 us, elapsed = 485.897 us.
+
+Notice from spectre during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-035_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.....
+
+Notice from spectre at time = 1.05125 ns during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_0__m0_m2__m1:int_b.
+
+........9........8........7......
+
+Notice from spectre at time = 1.09384 ns during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1__m0_m2__m0:int_b.
+Notice from spectre at time = 1.09468 ns during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1__m0_m2__m0:int_b.
+
+........9........8........7........6....
+
+Notice from spectre at time = 1.40018 ns during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6......
+
+Notice from spectre at time = 1.46018 ns during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             89
+
+Notice from spectre during transient analysis `RiseTime-035_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 242 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.8 %)      1 (79.0 %)      2 (100.0 %)     3 (53.0 %)
+        Other   
+Initial condition solution time: CPU = 539 us, elapsed = 545.979 us.
+Intrinsic tran analysis time:    CPU = 14.269 ms, elapsed = 29.5651 ms.
+Total time required for tran analysis `RiseTime-035_RiseTime': CPU = 16.078 ms, elapsed = 31.5311 ms.
+Time accumulated: CPU = 1.11344 s, elapsed = 4.05727 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    26 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-036_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 478 us, elapsed = 478.983 us.
+
+Notice from spectre during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-036_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.53138 ns during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.59138 ns during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5...
+
+Notice from spectre at time = 1.65138 ns during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.....
+
+Notice from spectre at time = 1.71138 ns during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.77138 ns during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             86
+
+Notice from spectre during transient analysis `RiseTime-036_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 214.5 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.4 %)      1 (78.4 %)      2 (100.0 %)     3 (53.8 %)
+        Other   
+Initial condition solution time: CPU = 524 us, elapsed = 525.951 us.
+Intrinsic tran analysis time:    CPU = 13.793 ms, elapsed = 28.7759 ms.
+Total time required for tran analysis `RiseTime-036_RiseTime': CPU = 15.615 ms, elapsed = 30.5998 ms.
+Time accumulated: CPU = 1.13692 s, elapsed = 4.14874 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    21 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-037_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 473 us, elapsed = 472.784 us.
+
+Notice from spectre during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-037_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........
+
+Notice from spectre at time = 1.51978 ns during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.
+
+Notice from spectre at time = 1.57978 ns during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.63978 ns during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.69978 ns during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.75978 ns during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             83
+
+Notice from spectre during transient analysis `RiseTime-037_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 186.4 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.5 %)      1 (78.0 %)      2 (100.0 %)     3 (54.3 %)
+        Other   
+Initial condition solution time: CPU = 511 us, elapsed = 514.03 us.
+Intrinsic tran analysis time:    CPU = 13.933 ms, elapsed = 29.319 ms.
+Total time required for tran analysis `RiseTime-037_RiseTime': CPU = 15.839 ms, elapsed = 31.224 ms.
+Time accumulated: CPU = 1.15996 s, elapsed = 4.24039 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    21 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-038_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 494 us, elapsed = 494.957 us.
+
+Notice from spectre during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-038_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.69632 ns during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.75632 ns during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.81632 ns during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4
+
+Notice from spectre at time = 1.87632 ns during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4..
+
+Notice from spectre at time = 1.93632 ns during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             85
+
+Notice from spectre during transient analysis `RiseTime-038_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 124.6 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.5 %)      1 (78.5 %)      2 (100.0 %)     3 (53.8 %)
+        Other   
+Initial condition solution time: CPU = 544 us, elapsed = 545.979 us.
+Intrinsic tran analysis time:    CPU = 14.521 ms, elapsed = 29.6659 ms.
+Total time required for tran analysis `RiseTime-038_RiseTime': CPU = 16.525 ms, elapsed = 31.6691 ms.
+Time accumulated: CPU = 1.18436 s, elapsed = 4.33406 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    18 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-039_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 519 us, elapsed = 519.037 us.
+
+Notice from spectre during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-039_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.83612 ns during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.89612 ns during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.95612 ns during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.01612 ns during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4......
+
+Notice from spectre at time = 2.07612 ns during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             78
+
+Notice from spectre during transient analysis `RiseTime-039_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 79.44 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.3 %)      1 (78.9 %)      2 (100.0 %)     3 (53.3 %)
+        Other   
+Initial condition solution time: CPU = 567 us, elapsed = 567.913 us.
+Intrinsic tran analysis time:    CPU = 13.703 ms, elapsed = 29.0978 ms.
+Total time required for tran analysis `RiseTime-039_RiseTime': CPU = 15.641 ms, elapsed = 31.034 ms.
+Time accumulated: CPU = 1.20738 s, elapsed = 4.4249 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    16 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-040_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 474 us, elapsed = 475.883 us.
+
+Notice from spectre during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-040_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4........3........2
+
+Notice from spectre at time = 2.46688 ns during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2..
+
+Notice from spectre at time = 2.52688 ns during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2....
+
+Notice from spectre at time = 2.58688 ns during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2......
+
+Notice from spectre at time = 2.64688 ns during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.70688 ns during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             69
+
+Notice from spectre during transient analysis `RiseTime-040_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 51.32 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.3 %)      1 (79.4 %)      2 (100.0 %)     3 (52.6 %)
+        Other   
+Initial condition solution time: CPU = 515 us, elapsed = 516.891 us.
+Intrinsic tran analysis time:    CPU = 14.374 ms, elapsed = 43.561 ms.
+Total time required for tran analysis `RiseTime-040_RiseTime': CPU = 16.133 ms, elapsed = 45.357 ms.
+Time accumulated: CPU = 1.23086 s, elapsed = 4.53823 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    5 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-041_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 491 us, elapsed = 492.096 us.
+
+Notice from spectre during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-041_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36992 ns during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42992 ns during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.54992 ns during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2........1.......
+
+Notice from spectre at time = 2.96299 ns during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5........4........3........2........1........
+
+Notice from spectre at time = 3 ns during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             69
+
+Notice from spectre during transient analysis `RiseTime-041_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 31.87 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.8 %)      1 (80.0 %)      2 (100.0 %)     3 (52.1 %)
+        Other   
+Initial condition solution time: CPU = 541 us, elapsed = 541.925 us.
+Intrinsic tran analysis time:    CPU = 12.5 ms, elapsed = 36.6769 ms.
+Total time required for tran analysis `RiseTime-041_RiseTime': CPU = 14.236 ms, elapsed = 38.413 ms.
+Time accumulated: CPU = 1.25243 s, elapsed = 4.65662 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+****************************************************************
+Transient Analysis `RiseTime-042_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 483 us, elapsed = 483.99 us.
+
+Notice from spectre during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-042_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7.....
+
+Notice from spectre at time = 1.06497 ns during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.07336 ns during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.08463 ns during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7......
+
+Notice from spectre at time = 1.09962 ns during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.12721 ns during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_2__m0_x2__m1:int_g.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             92
+
+Notice from spectre during transient analysis `RiseTime-042_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 259.1 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (52.1 %)      1 (80.7 %)      2 (100.0 %)     3 (51.1 %)
+        Other   
+Initial condition solution time: CPU = 529 us, elapsed = 535.011 us.
+Intrinsic tran analysis time:    CPU = 13.59 ms, elapsed = 37.565 ms.
+Total time required for tran analysis `RiseTime-042_RiseTime': CPU = 15.401 ms, elapsed = 39.592 ms.
+Time accumulated: CPU = 1.27675 s, elapsed = 4.82458 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    46 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-043_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 480 us, elapsed = 481.129 us.
+
+Notice from spectre during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-043_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7......
+
+Notice from spectre at time = 1.09431 ns during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+Notice from spectre at time = 1.0975 ns during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6.......
+
+Notice from spectre at time = 1.50294 ns during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.56294 ns during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.62294 ns during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             87
+
+Notice from spectre during transient analysis `RiseTime-043_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 235.6 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.8 %)      1 (81.1 %)      2 (100.0 %)     3 (50.7 %)
+        Other   
+Initial condition solution time: CPU = 535 us, elapsed = 540.972 us.
+Intrinsic tran analysis time:    CPU = 14.29 ms, elapsed = 38.816 ms.
+Total time required for tran analysis `RiseTime-043_RiseTime': CPU = 16.109 ms, elapsed = 40.8239 ms.
+Time accumulated: CPU = 1.30047 s, elapsed = 4.94245 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    23 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-044_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 494 us, elapsed = 494.003 us.
+
+Notice from spectre during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-044_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........
+
+Notice from spectre at time = 1.1625 ns during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Va:p.
+
+........9........8........7........6........5..
+
+Notice from spectre at time = 1.62568 ns during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.68568 ns during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.74568 ns during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5.......
+
+Notice from spectre at time = 1.80568 ns during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             80
+
+Notice from spectre during transient analysis `RiseTime-044_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_2__m0_x2__m0:sbnode) = 1 V
+I: I(Vd:p) = 219.8 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.4 %)      1 (81.6 %)      2 (100.0 %)     3 (50.0 %)
+        Other   
+Initial condition solution time: CPU = 537 us, elapsed = 539.064 us.
+Intrinsic tran analysis time:    CPU = 14.557 ms, elapsed = 43.7429 ms.
+Total time required for tran analysis `RiseTime-044_RiseTime': CPU = 16.415 ms, elapsed = 45.6002 ms.
+Time accumulated: CPU = 1.32434 s, elapsed = 5.07223 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-045_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 497 us, elapsed = 498.056 us.
+
+Notice from spectre during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-045_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.2609 ns during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6..
+
+Notice from spectre at time = 1.29124 ns during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5....
+
+Notice from spectre at time = 1.69271 ns during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5......
+
+Notice from spectre at time = 1.75271 ns during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........
+
+Notice from spectre at time = 1.81271 ns during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `RiseTime-045_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 177.2 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.2 %)      1 (82.1 %)      2 (100.0 %)     3 (49.4 %)
+        Other   
+Initial condition solution time: CPU = 541 us, elapsed = 541.925 us.
+Intrinsic tran analysis time:    CPU = 14.364 ms, elapsed = 41.81 ms.
+Total time required for tran analysis `RiseTime-045_RiseTime': CPU = 16.113 ms, elapsed = 43.5591 ms.
+Time accumulated: CPU = 1.34764 s, elapsed = 5.1955 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    20 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-046_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 498 us, elapsed = 498.056 us.
+
+Notice from spectre during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-046_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6........5........4.
+
+Notice from spectre at time = 1.89832 ns during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4...
+
+Notice from spectre at time = 1.95832 ns during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4.....
+
+Notice from spectre at time = 2.01832 ns during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4.......
+
+Notice from spectre at time = 2.07832 ns during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+
+........9........8........7........6........5........4........
+
+Notice from spectre at time = 2.13832 ns during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.net_0__m0__m1.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `RiseTime-046_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 120.9 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.9 %)      1 (82.5 %)      2 (100.0 %)     3 (48.7 %)
+        Other   
+Initial condition solution time: CPU = 538 us, elapsed = 539.064 us.
+Intrinsic tran analysis time:    CPU = 13.769 ms, elapsed = 43.7548 ms.
+Total time required for tran analysis `RiseTime-046_RiseTime': CPU = 15.561 ms, elapsed = 45.547 ms.
+Time accumulated: CPU = 1.37065 s, elapsed = 5.32251 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    15 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-047_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 473 us, elapsed = 473.976 us.
+
+Notice from spectre during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-047_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.26596 ns during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5........4........3........2..
+
+Notice from spectre at time = 2.51161 ns during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2...
+
+Notice from spectre at time = 2.57161 ns during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.....
+
+Notice from spectre at time = 2.63161 ns during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+
+........9........8........7........6........5........4........3........2.......
+
+Notice from spectre at time = 2.69161 ns during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             75
+
+Notice from spectre during transient analysis `RiseTime-047_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 79.68 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.5 %)      1 (82.9 %)      2 (100.0 %)     3 (48.3 %)
+        Other   
+Initial condition solution time: CPU = 518 us, elapsed = 531.912 us.
+Intrinsic tran analysis time:    CPU = 13.609 ms, elapsed = 37.4629 ms.
+Total time required for tran analysis `RiseTime-047_RiseTime': CPU = 15.448 ms, elapsed = 39.5389 ms.
+Time accumulated: CPU = 1.39385 s, elapsed = 5.44195 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    6 notices suppressed.
+
+
+****************************************************************
+Transient Analysis `RiseTime-048_RiseTime': time = (0 s -> 3 ns)
+****************************************************************
+DC simulation time: CPU = 476 us, elapsed = 476.837 us.
+
+Notice from spectre during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file NAND.raw/RiseTime-048_RiseTime.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   6       (voltage)
+
+........9........8........7........6
+
+Notice from spectre at time = 1.24992 ns during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.
+
+Notice from spectre at time = 1.30992 ns during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6...
+
+Notice from spectre at time = 1.36992 ns during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6.....
+
+Notice from spectre at time = 1.42992 ns during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+
+........9........8........7........6........5
+
+Notice from spectre at time = 1.54992 ns during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    Found trapezoidal ringing on node Vb:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             63
+
+Notice from spectre during transient analysis `RiseTime-048_RiseTime', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.M_i_3__m0_x2__m1:sbnode) = 1 V
+I: I(Vd:p) = 49.79 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.4 %)      1 (83.2 %)      2 (100.0 %)     3 (47.9 %)
+        Other   
+Initial condition solution time: CPU = 522 us, elapsed = 532.15 us.
+Intrinsic tran analysis time:    CPU = 11.733 ms, elapsed = 35.666 ms.
+Total time required for tran analysis `RiseTime-048_RiseTime': CPU = 13.697 ms, elapsed = 37.852 ms.
+Time accumulated: CPU = 1.41533 s, elapsed = 5.55702 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Aggregate audit (12:38:05 PM, Mon Jan 13, 2020):
+Time used: CPU = 1.42 s, elapsed = 5.61 s, util. = 25.3%.
+Time spent in licensing: elapsed = 27.5 ms.
+Peak memory used = 65.5 Mbytes.
+Simulation started at: 12:37:59 PM, Mon Jan 13, 2020, ended at: 12:38:05 PM, Mon Jan 13, 2020, with elapsed time (wall clock): 5.61 s.
+spectre completes with 0 errors, 3 warnings, and 388 notices.
